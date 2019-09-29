@@ -38,7 +38,12 @@ void expand_mat(polyvecl mat[K], const unsigned char rho[SEEDBYTES]) {
 
       shake128(outbuf, sizeof(outbuf), inbuf, SEEDBYTES + 1);
 
+      int loop2;
+      static loop2_max = 0;
+      loop2 = 0;
+      //while(loop2<257) {
       while(ctr < N) {
+    	loop2++;
         val  = outbuf[pos++];
         val |= (uint32_t)outbuf[pos++] << 8;
         val |= (uint32_t)outbuf[pos++] << 16;
@@ -47,6 +52,10 @@ void expand_mat(polyvecl mat[K], const unsigned char rho[SEEDBYTES]) {
         /* Rejection sampling */
         if(val < Q)
           mat[i].vec[j].coeffs[ctr++] = val;
+      }
+      if(loop2_max < loop2){
+    	  loop2_max = loop2;
+          printf("expand_mat loop = %d\n",loop2);
       }
     }
   }
@@ -91,7 +100,7 @@ void challenge(poly *c,
     c->coeffs[i] = 0;
 
   for(i = 196; i < 256; ++i) {
-    do {
+    challenge_label0:do {
       if(pos >= SHAKE256_RATE) {
         shake256_squeezeblocks(outbuf, 1, state);
         pos = 0;
@@ -118,7 +127,7 @@ void challenge(poly *c,
 *
 * Returns 0 (success)
 **************************************************/
-int crypto_sign_keypair(unsigned char *pk, unsigned char *sk) {
+int crypto_sign_keypair(unsigned char pk[CRYPTO_PUBLICKEYBYTES], unsigned char sk[CRYPTO_SECRETKEYBYTES]) {
   unsigned int i;
   unsigned char seedbuf[3*SEEDBYTES];
   unsigned char tr[CRHBYTES];
@@ -182,11 +191,11 @@ int crypto_sign_keypair(unsigned char *pk, unsigned char *sk) {
 *
 * Returns 0 (success)
 **************************************************/
-int crypto_sign(unsigned char *sm,
-                unsigned long long *smlen,
-                const unsigned char *m,
-                unsigned long long mlen, 
-                const unsigned char *sk) 
+int crypto_sign(unsigned char sm[MLEN + CRYPTO_BYTES],
+                unsigned long long smlen[1],
+                const unsigned char m[MLEN],
+                unsigned long long mlen,
+                const unsigned char sk[CRYPTO_SECRETKEYBYTES])
 {
   unsigned long long i, j;
   unsigned int n;
@@ -303,11 +312,11 @@ int crypto_sign(unsigned char *sm,
 *
 * Returns 0 if signed message could be verified correctly and -1 otherwise
 **************************************************/
-int crypto_sign_open(unsigned char *m,
-                     unsigned long long *mlen,
-                     const unsigned char *sm,
+int crypto_sign_open(unsigned char m[MLEN],
+                     unsigned long long mlen[1],
+                     const unsigned char sm[MLEN + CRYPTO_BYTES],
                      unsigned long long smlen,
-                     const unsigned char *pk)
+                     const unsigned char pk[CRYPTO_PUBLICKEYBYTES])
 {
   unsigned long long i;
   unsigned char rho[SEEDBYTES];
@@ -316,15 +325,27 @@ int crypto_sign_open(unsigned char *m,
   polyvecl mat[K], z;
   polyveck t1, w1, h, tmp1, tmp2;
 
-  if(smlen < CRYPTO_BYTES)
-    goto badsig;
+  if(smlen < CRYPTO_BYTES){
+	  *mlen = (unsigned long long) -1;
+	    for(i = 0; i < smlen; ++i)
+	      m[i] = 0;
+
+	    return -1;
+  }
+   // goto badsig;
 
   *mlen = smlen - CRYPTO_BYTES;
 
   unpack_pk(rho, &t1, pk);
   unpack_sig(&z, &h, &c, sm);
-  if(polyvecl_chknorm(&z, GAMMA1 - BETA))
-    goto badsig;
+  if(polyvecl_chknorm(&z, GAMMA1 - BETA)){
+	  *mlen = (unsigned long long) -1;
+	    for(i = 0; i < smlen; ++i)
+	      m[i] = 0;
+
+	    return -1;
+  }
+    //goto badsig;
 
   /* Compute CRH(CRH(rho, t1), msg) using m as "playground" buffer */
   for(i = 0; i < CRYPTO_PUBLICKEYBYTES; ++i)
@@ -361,10 +382,16 @@ int crypto_sign_open(unsigned char *m,
   polyveck_use_hint(&w1, &tmp1, &h);
 
   /* Call random oracle and verify challenge */
-  challenge(&cp, mu, &w1);
+  /*challenge(&cp, mu, &w1);
   for(i = 0; i < N; ++i)
-    if(c.coeffs[i] != cp.coeffs[i])
-      goto badsig;
+    if(c.coeffs[i] != cp.coeffs[i]){
+    	*mlen = (unsigned long long) -1;
+    	  for(i = 0; i < smlen; ++i)
+    	    m[i] = 0;
+
+    	  return -1;
+    }*/
+      //goto badsig;
 
   /* All good, copy msg, return 0 */
   for(i = 0; i < *mlen; ++i)
@@ -373,10 +400,10 @@ int crypto_sign_open(unsigned char *m,
   return 0;
 
   /* Signature verification failed */
-  badsig:
+ /* badsig:
   *mlen = (unsigned long long) -1;
   for(i = 0; i < smlen; ++i)
     m[i] = 0;
   
-  return -1;
+  return -1;*/
 }

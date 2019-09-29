@@ -8,6 +8,9 @@
 #include <stdint.h>
 #include <stdlib.h>
 #include "fips202.h"
+#include <string.h>
+#include <stdio.h>
+#include "ap_cint.h"
 
 #define NROUNDS 24
 #define ROL(a, offset) ((a << offset) ^ (a >> (64-offset)))
@@ -25,7 +28,7 @@ static uint64_t load64(const unsigned char *x) {
   unsigned int i;
   uint64_t r = 0;
 
-  for (i = 0; i < 8; ++i)
+  load64_label38:for (i = 0; i < 8; ++i)
     r |= (uint64_t)x[i] << 8*i;
 
   return r;
@@ -42,7 +45,7 @@ static uint64_t load64(const unsigned char *x) {
 static void store64(unsigned char *x, uint64_t u) {
   unsigned int i;
 
-  for(i = 0; i < 8; ++i)
+  store64_label39:for(i = 0; i < 8; ++i)
     x[i] = u >> 8*i;
 }
 
@@ -125,7 +128,7 @@ void KeccakF1600_StatePermute(uint64_t *state)
         Aso = state[23];
         Asu = state[24];
 
-        for( round = 0; round < NROUNDS; round += 2 )
+        KeccakF1600_StatePermute_label0:for( round = 0; round < NROUNDS; round += 2 )
         {
             //    prepareTheta
             BCa = Aba^Aga^Aka^Ama^Asa;

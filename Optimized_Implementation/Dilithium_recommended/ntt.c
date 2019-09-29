@@ -24,10 +24,10 @@ void ntt(uint32_t *p) {
   uint32_t zeta, t;
 
   k = 1;
-  for(len = 128; len > 0; len >>= 1) {
+  ntt_label37:for(len = 128; len > 0; len >>= 1) {
     for(start = 0; start < N; start = j + len) {
       zeta = zetas[k++];
-      for(j = start; j < start + len; ++j) {
+      ntt_label36:for(j = start; j < start + len; ++j) {
         t = montgomery_reduce((uint64_t)zeta * p[j + len]);
         p[j + len] = p[j] + 2*Q - t;
         p[j] = p[j] + t;
@@ -51,10 +51,10 @@ void invntt_frominvmont(uint32_t *p) {
   const uint32_t f = (((uint64_t)MONT*MONT % Q) * (Q-1) % Q) * ((Q-1) >> 8) % Q;
 
   k = 0;
-  for(len = 1; len < N; len <<= 1) {
-    for(start = 0; start < N; start = j + len) {
+  invntt_frominvmont_label4:for(len = 1; len < N; len <<= 1) {
+    invntt_frominvmont_label37:for(start = 0; start < N; start = j + len) {
       zeta = zetas_inv[k++];
-      for(j = start; j < start + len; ++j) {
+      invntt_frominvmont_label0:for(j = start; j < start + len; ++j) {
         t = p[j];
         p[j] = t + p[j + len];
         p[j + len] = t + 256*Q - p[j + len];
@@ -63,7 +63,7 @@ void invntt_frominvmont(uint32_t *p) {
     }
   }
 
-  for(j = 0; j < N; ++j) {
+  invntt_frominvmont_label5:for(j = 0; j < N; ++j) {
     p[j] = montgomery_reduce((uint64_t)f * p[j]);
   }
 }

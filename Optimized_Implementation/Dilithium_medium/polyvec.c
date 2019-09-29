@@ -20,7 +20,7 @@
 void polyvecl_freeze(polyvecl *v) {
   unsigned int i;
 
-  for(i = 0; i < L; ++i)
+  polyvecl_freeze_label21:for(i = 0; i < L; ++i)
     poly_freeze(v->vec+i);
 }
 
@@ -37,7 +37,7 @@ void polyvecl_freeze(polyvecl *v) {
 void polyvecl_add(polyvecl *w, const polyvecl *u, const polyvecl *v) {
   unsigned int i;
 
-  for(i = 0; i < L; ++i)
+  polyvecl_add_label20:for(i = 0; i < L; ++i)
     poly_add(w->vec+i, u->vec+i, v->vec+i);
 }
 
@@ -51,7 +51,7 @@ void polyvecl_add(polyvecl *w, const polyvecl *u, const polyvecl *v) {
 void polyvecl_ntt(polyvecl *v) {
   unsigned int i;
 
-  for(i = 0; i < L; ++i)
+  polyvecl_ntt_label19:for(i = 0; i < L; ++i)
     poly_ntt(v->vec+i);
 }
 
@@ -74,12 +74,12 @@ void polyvecl_pointwise_acc_invmontgomery(poly *w,
 
   poly_pointwise_invmontgomery(w, u->vec+0, v->vec+0);
 
-  for(i = 1; i < L; ++i) {
+  polyvecl_pointwise_acc_invmontgomery_label17:for(i = 1; i < L; ++i) {
     poly_pointwise_invmontgomery(&t, u->vec+i, v->vec+i);
     poly_add(w, w, &t);
   }
 
-  for(i = 0; i < N; ++i) 
+  polyvecl_pointwise_acc_invmontgomery_label18:for(i = 0; i < N; ++i)
     w->coeffs[i] = reduce32(w->coeffs[i]);
 }
 
@@ -99,7 +99,7 @@ int polyvecl_chknorm(const polyvecl *v, uint32_t bound)  {
   unsigned int i;
   int ret = 0;
 
-  for(i = 0; i < L; ++i)
+  polyvecl_chknorm_label16:for(i = 0; i < L; ++i)
     ret |= poly_chknorm(v->vec+i, bound);
 
   return ret;
@@ -120,7 +120,7 @@ int polyvecl_chknorm(const polyvecl *v, uint32_t bound)  {
 void polyveck_freeze(polyveck *v)  {
   unsigned int i;
 
-  for(i = 0; i < K; ++i)
+  polyveck_freeze_label15:for(i = 0; i < K; ++i)
     poly_freeze(v->vec+i);
 }
 
@@ -137,7 +137,7 @@ void polyveck_freeze(polyveck *v)  {
 void polyveck_add(polyveck *w, const polyveck *u, const polyveck *v) {
   unsigned int i;
 
-  for(i = 0; i < K; ++i)
+  polyveck_add_label14:for(i = 0; i < K; ++i)
     poly_add(w->vec+i, u->vec+i, v->vec+i);
 }
 
@@ -156,7 +156,7 @@ void polyveck_add(polyveck *w, const polyveck *u, const polyveck *v) {
 void polyveck_sub(polyveck *w, const polyveck *u, const polyveck *v) {
   unsigned int i;
 
-  for(i = 0; i < K; ++i)
+  polyveck_sub_label13:for(i = 0; i < K; ++i)
     poly_sub(w->vec+i, u->vec+i, v->vec+i);
 }
 
@@ -171,7 +171,7 @@ void polyveck_sub(polyveck *w, const polyveck *u, const polyveck *v) {
 void polyveck_neg(polyveck *v) { 
   unsigned int i;
 
-  for(i = 0; i < K; ++i)
+  polyveck_neg_label12:for(i = 0; i < K; ++i)
     poly_neg(v->vec+i);
 }
 
@@ -186,7 +186,7 @@ void polyveck_neg(polyveck *v) {
 void polyveck_shiftl(polyveck *v, unsigned int k) { 
   unsigned int i;
 
-  for(i = 0; i < K; ++i)
+  polyveck_shiftl_label11:for(i = 0; i < K; ++i)
     poly_shiftl(v->vec+i, k);
 }
 
@@ -200,7 +200,7 @@ void polyveck_shiftl(polyveck *v, unsigned int k) {
 void polyveck_ntt(polyveck *v) {
   unsigned int i;
 
-  for(i = 0; i < K; ++i)
+  polyveck_ntt_label10:for(i = 0; i < K; ++i)
     poly_ntt(v->vec+i);
 }
 
@@ -215,7 +215,7 @@ void polyveck_ntt(polyveck *v) {
 void polyveck_invntt_montgomery(polyveck *v) {
   unsigned int i;
 
-  for(i = 0; i < K; ++i)
+  polyveck_invntt_montgomery_label9:for(i = 0; i < K; ++i)
     poly_invntt_montgomery(v->vec+i);
 }
 
@@ -235,7 +235,7 @@ int polyveck_chknorm(const polyveck *v, uint32_t bound) {
   unsigned int i;
   int ret = 0;
 
-  for(i = 0; i < K; ++i)
+  polyveck_chknorm_label8:for(i = 0; i < K; ++i)
     ret |= poly_chknorm(v->vec+i, bound);
 
   return ret;
@@ -258,7 +258,7 @@ void polyveck_power2round(polyveck *v1, polyveck *v0, const polyveck *v) {
   unsigned int i, j;
 
   for(i = 0; i < K; ++i)
-    for(j = 0; j < N; ++j)
+    polyveck_power2round_label6:for(j = 0; j < N; ++j)
       v1->vec[i].coeffs[j] = power2round(v->vec[i].coeffs[j],
                                          &v0->vec[i].coeffs[j]);
 }
@@ -328,7 +328,7 @@ void polyveck_use_hint(polyveck *w, const polyveck *u, const polyveck *h) {
   unsigned int i, j;
 
   for(i = 0; i < K; ++i)
-    for(j = 0; j < N; ++j)
+    polyveck_use_hint_label7:for(j = 0; j < N; ++j)
       w->vec[i].coeffs[j] = use_hint(u->vec[i].coeffs[j], h->vec[i].coeffs[j]);
 }
 

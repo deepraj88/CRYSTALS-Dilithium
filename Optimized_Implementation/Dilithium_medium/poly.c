@@ -16,7 +16,7 @@
 void poly_freeze(poly *a) {
   unsigned int i;
 
-  for(i = 0; i < N; ++i)
+  poly_freeze_label4:for(i = 0; i < N; ++i)
     a->coeffs[i] = freeze(a->coeffs[i]);
 }
 
@@ -32,7 +32,7 @@ void poly_freeze(poly *a) {
 void poly_add(poly *c, const poly *a, const poly *b)  {
   unsigned int i;
 
-  for(i = 0; i < N; ++i)
+  poly_add_label22:for(i = 0; i < N; ++i)
     c->coeffs[i] = a->coeffs[i] + b->coeffs[i];
 }
 
@@ -50,7 +50,7 @@ void poly_add(poly *c, const poly *a, const poly *b)  {
 void poly_sub(poly *c, const poly *a, const poly *b) {
   unsigned int i;
 
-  for(i = 0; i < N; ++i)
+  poly_sub_label23:for(i = 0; i < N; ++i)
     c->coeffs[i] = a->coeffs[i] + 2*Q - b->coeffs[i];
 }
 
@@ -80,7 +80,7 @@ void poly_neg(poly *a) {
 void poly_shiftl(poly *a, unsigned int k) {
   unsigned int i;
 
-  for(i = 0; i < N; ++i)
+  poly_shiftl_label24:for(i = 0; i < N; ++i)
     a->coeffs[i] <<= k;
 }
 
@@ -170,7 +170,7 @@ void poly_uniform(poly *a, unsigned char *buf) {
   uint32_t t;
 
   ctr = pos = 0;
-  while(ctr < N) {
+  poly_uniform_label25:while(ctr < N) {
     t  = buf[pos++];
     t |= (uint32_t)buf[pos++] << 8;
     t |= (uint32_t)buf[pos++] << 16;
@@ -207,7 +207,7 @@ static unsigned int rej_eta(uint32_t *a,
   unsigned char t0, t1;
 
   ctr = pos = 0;
-  while(ctr < len) {
+  rej_eta_label26:while(ctr < len) {
 #if ETA <= 3
     t0 = buf[pos] & 0x07;
     t1 = buf[pos++] >> 5;
@@ -291,7 +291,7 @@ static unsigned int rej_gamma1m1(uint32_t *a,
   uint32_t t;
 
   ctr = pos = 0;
-  while(ctr < len) {
+  rej_gamma1m1_label27:while(ctr < len) {
     t  = buf[pos];
     t |= (uint32_t)buf[pos + 1] << 8;
     t |= (uint32_t)buf[pos + 2] << 16;
@@ -395,7 +395,7 @@ void polyeta_pack(unsigned char *r, const poly *a) {
     r[3*i+2] |= t[7] << 5;
   }
 #else
-  for(i = 0; i < N/2; ++i) {
+  polyeta_pack_label28:for(i = 0; i < N/2; ++i) {
     t[0] = Q + ETA - a->coeffs[2*i+0];
     t[1] = Q + ETA - a->coeffs[2*i+1];
     r[i] = t[0] | (t[1] << 4);
@@ -437,7 +437,7 @@ void polyeta_unpack(poly *r, const unsigned char *a) {
     r->coeffs[8*i+7] = Q + ETA - r->coeffs[8*i+7];
   }
 #else
-  for(i = 0; i < N/2; ++i) {
+  polyeta_unpack_label29:for(i = 0; i < N/2; ++i) {
     r->coeffs[2*i+0] = a[i] & 0x0F;
     r->coeffs[2*i+1] = a[i] >> 4;
     r->coeffs[2*i+0] = Q + ETA - r->coeffs[2*i+0];
@@ -462,7 +462,7 @@ void polyt1_pack(unsigned char *r, const poly *a) {
 #endif
   unsigned int i;
 
-  for(i = 0; i < N/8; ++i) {
+  polyt1_pack_label30:for(i = 0; i < N/8; ++i) {
     r[9*i+0]  =  a->coeffs[8*i+0] & 0xFF;
     r[9*i+1]  = (a->coeffs[8*i+0] >> 8) | ((a->coeffs[8*i+1] & 0x7F) << 1);
     r[9*i+2]  = (a->coeffs[8*i+1] >> 7) | ((a->coeffs[8*i+2] & 0x3F) << 2);
@@ -487,7 +487,7 @@ void polyt1_pack(unsigned char *r, const poly *a) {
 void polyt1_unpack(poly *r, const unsigned char *a) {
   unsigned int i;
 
-  for(i = 0; i < N/8; ++i) {
+  polyt1_unpack_label31:for(i = 0; i < N/8; ++i) {
     r->coeffs[8*i+0] =  a[9*i+0]       | ((uint32_t)(a[9*i+1] & 0x01) << 8);
     r->coeffs[8*i+1] = (a[9*i+1] >> 1) | ((uint32_t)(a[9*i+2] & 0x03) << 7);
     r->coeffs[8*i+2] = (a[9*i+2] >> 2) | ((uint32_t)(a[9*i+3] & 0x07) << 6);
@@ -513,7 +513,7 @@ void polyt0_pack(unsigned char *r, const poly *a) {
   unsigned int i;
   uint32_t t[4];
 
-  for(i = 0; i < N/4; ++i) {
+  polyt0_pack_label32:for(i = 0; i < N/4; ++i) {
     t[0] = Q + (1 << (D-1)) - a->coeffs[4*i+0];
     t[1] = Q + (1 << (D-1)) - a->coeffs[4*i+1];
     t[2] = Q + (1 << (D-1)) - a->coeffs[4*i+2];
@@ -545,7 +545,7 @@ void polyt0_pack(unsigned char *r, const poly *a) {
 void polyt0_unpack(poly *r, const unsigned char *a) {
   unsigned int i;
 
-  for(i = 0; i < N/4; ++i) {
+  polyt0_unpack_label33:for(i = 0; i < N/4; ++i) {
     r->coeffs[4*i+0]  = a[7*i+0];
     r->coeffs[4*i+0] |= (uint32_t)(a[7*i+1] & 0x3F) << 8;
 
@@ -585,7 +585,7 @@ void polyz_pack(unsigned char *r, const poly *a) {
   unsigned int i;
   uint32_t t[2];
 
-  for(i = 0; i < N/2; ++i) {
+  polyz_pack_label34:for(i = 0; i < N/2; ++i) {
     /* Map to {0,...,2*GAMMA1 - 2} */
     t[0] = GAMMA1 - 1 - a->coeffs[2*i+0];
     t[0] += ((int32_t)t[0] >> 31) & Q;
@@ -644,6 +644,6 @@ void polyz_unpack(poly *r, const unsigned char *a) {
 void polyw1_pack(unsigned char *r, const poly *a) {
   unsigned int i;
 
-  for(i = 0; i < N/2; ++i)
+  polyw1_pack_label35:for(i = 0; i < N/2; ++i)
     r[i] = a->coeffs[2*i+0] | (a->coeffs[2*i+1] << 4);
 }
