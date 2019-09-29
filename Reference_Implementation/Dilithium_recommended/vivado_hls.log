@@ -1,0 +1,13 @@
+INFO: [HLS 200-10] Running '/opt/Xilinx2018/Vivado/2018.2/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'dss545' on host 'dark-knight.poly.edu' (Linux_x86_64 version 2.6.32-754.9.1.el6.x86_64) on Sat Apr 06 20:27:47 EDT 2019
+INFO: [HLS 200-10] On os "CentOS release 6.10 (Final)"
+INFO: [HLS 200-10] In directory '/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended'
+INFO: [HLS 200-10] Opening project '/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj'.
+INFO: [HLS 200-10] Opening solution '/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7a200tfbg676-2'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+make: `csim.exe' is up to date.
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************

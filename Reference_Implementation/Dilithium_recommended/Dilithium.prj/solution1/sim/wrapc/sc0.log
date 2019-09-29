@@ -1,0 +1,102 @@
+   Build using "/opt/Xilinx2018/Vivado/2018.2/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling apatb_crypto_sign.cpp
+   Compiling (apcc) aes.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/opt/Xilinx2018/Vivado/2018.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'dss545' on host 'dark-knight.poly.edu' (Linux_x86_64 version 2.6.32-754.9.1.el6.x86_64) on Wed Mar 27 17:24:17 EDT 2019
+INFO: [HLS 200-10] On os "CentOS release 6.10 (Final)"
+INFO: [HLS 200-10] In directory '/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_dss545/104201553721857921364
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) fips202.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/opt/Xilinx2018/Vivado/2018.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'dss545' on host 'dark-knight.poly.edu' (Linux_x86_64 version 2.6.32-754.9.1.el6.x86_64) on Wed Mar 27 17:24:24 EDT 2019
+INFO: [HLS 200-10] On os "CentOS release 6.10 (Final)"
+INFO: [HLS 200-10] In directory '/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_dss545/105511553721864440602
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) newtest_sign.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/opt/Xilinx2018/Vivado/2018.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'dss545' on host 'dark-knight.poly.edu' (Linux_x86_64 version 2.6.32-754.9.1.el6.x86_64) on Wed Mar 27 17:24:31 EDT 2019
+INFO: [HLS 200-10] On os "CentOS release 6.10 (Final)"
+INFO: [HLS 200-10] In directory '/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_dss545/106831553721871652186
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) ntt.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/opt/Xilinx2018/Vivado/2018.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'dss545' on host 'dark-knight.poly.edu' (Linux_x86_64 version 2.6.32-754.9.1.el6.x86_64) on Wed Mar 27 17:24:37 EDT 2019
+INFO: [HLS 200-10] On os "CentOS release 6.10 (Final)"
+INFO: [HLS 200-10] In directory '/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_dss545/108111553721877831422
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) packing.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/opt/Xilinx2018/Vivado/2018.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'dss545' on host 'dark-knight.poly.edu' (Linux_x86_64 version 2.6.32-754.9.1.el6.x86_64) on Wed Mar 27 17:24:43 EDT 2019
+INFO: [HLS 200-10] On os "CentOS release 6.10 (Final)"
+INFO: [HLS 200-10] In directory '/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_dss545/109381553721883860882
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) poly.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/opt/Xilinx2018/Vivado/2018.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'dss545' on host 'dark-knight.poly.edu' (Linux_x86_64 version 2.6.32-754.9.1.el6.x86_64) on Wed Mar 27 17:24:50 EDT 2019
+INFO: [HLS 200-10] On os "CentOS release 6.10 (Final)"
+INFO: [HLS 200-10] In directory '/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_dss545/110651553721890373501
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) polyvec.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/opt/Xilinx2018/Vivado/2018.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'dss545' on host 'dark-knight.poly.edu' (Linux_x86_64 version 2.6.32-754.9.1.el6.x86_64) on Wed Mar 27 17:24:56 EDT 2019
+INFO: [HLS 200-10] On os "CentOS release 6.10 (Final)"
+INFO: [HLS 200-10] In directory '/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_dss545/111851553721897060457
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) reduce.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/opt/Xilinx2018/Vivado/2018.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'dss545' on host 'dark-knight.poly.edu' (Linux_x86_64 version 2.6.32-754.9.1.el6.x86_64) on Wed Mar 27 17:25:03 EDT 2019
+INFO: [HLS 200-10] On os "CentOS release 6.10 (Final)"
+INFO: [HLS 200-10] In directory '/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_dss545/113211553721903352075
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) rng.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/opt/Xilinx2018/Vivado/2018.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'dss545' on host 'dark-knight.poly.edu' (Linux_x86_64 version 2.6.32-754.9.1.el6.x86_64) on Wed Mar 27 17:25:09 EDT 2019
+INFO: [HLS 200-10] On os "CentOS release 6.10 (Final)"
+INFO: [HLS 200-10] In directory '/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_dss545/115211553721909483597
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) rounding.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/opt/Xilinx2018/Vivado/2018.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'dss545' on host 'dark-knight.poly.edu' (Linux_x86_64 version 2.6.32-754.9.1.el6.x86_64) on Wed Mar 27 17:25:15 EDT 2019
+INFO: [HLS 200-10] On os "CentOS release 6.10 (Final)"
+INFO: [HLS 200-10] In directory '/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_dss545/116351553721915873560
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) sign.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/opt/Xilinx2018/Vivado/2018.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'dss545' on host 'dark-knight.poly.edu' (Linux_x86_64 version 2.6.32-754.9.1.el6.x86_64) on Wed Mar 27 17:25:21 EDT 2019
+INFO: [HLS 200-10] On os "CentOS release 6.10 (Final)"
+INFO: [HLS 200-10] In directory '/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_dss545/117421553721921948453
+INFO: [APCC 202-1] APCC is done.
+   Generating cosim.tv.exe

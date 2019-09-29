@@ -1,0 +1,333 @@
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+   Build using "/opt/Xilinx2018/Vivado/2018.2/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling apatb_crypto_sign_open.cpp
+   Compiling (apcc) aes.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/opt/Xilinx2018/Vivado/2018.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'dss545' on host 'dark-knight.poly.edu' (Linux_x86_64 version 2.6.32-754.9.1.el6.x86_64) on Wed Mar 27 17:18:01 EDT 2019
+INFO: [HLS 200-10] On os "CentOS release 6.10 (Final)"
+INFO: [HLS 200-10] In directory '/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_dss545/43251553721481593281
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) fips202.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/opt/Xilinx2018/Vivado/2018.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'dss545' on host 'dark-knight.poly.edu' (Linux_x86_64 version 2.6.32-754.9.1.el6.x86_64) on Wed Mar 27 17:18:08 EDT 2019
+INFO: [HLS 200-10] On os "CentOS release 6.10 (Final)"
+INFO: [HLS 200-10] In directory '/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_dss545/44531553721488140981
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) newtest_sign.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/opt/Xilinx2018/Vivado/2018.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'dss545' on host 'dark-knight.poly.edu' (Linux_x86_64 version 2.6.32-754.9.1.el6.x86_64) on Wed Mar 27 17:18:15 EDT 2019
+INFO: [HLS 200-10] On os "CentOS release 6.10 (Final)"
+INFO: [HLS 200-10] In directory '/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_dss545/45681553721495299630
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) ntt.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/opt/Xilinx2018/Vivado/2018.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'dss545' on host 'dark-knight.poly.edu' (Linux_x86_64 version 2.6.32-754.9.1.el6.x86_64) on Wed Mar 27 17:18:21 EDT 2019
+INFO: [HLS 200-10] On os "CentOS release 6.10 (Final)"
+INFO: [HLS 200-10] In directory '/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_dss545/46781553721501423980
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) packing.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/opt/Xilinx2018/Vivado/2018.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'dss545' on host 'dark-knight.poly.edu' (Linux_x86_64 version 2.6.32-754.9.1.el6.x86_64) on Wed Mar 27 17:18:27 EDT 2019
+INFO: [HLS 200-10] On os "CentOS release 6.10 (Final)"
+INFO: [HLS 200-10] In directory '/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_dss545/47971553721507494125
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) poly.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/opt/Xilinx2018/Vivado/2018.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'dss545' on host 'dark-knight.poly.edu' (Linux_x86_64 version 2.6.32-754.9.1.el6.x86_64) on Wed Mar 27 17:18:33 EDT 2019
+INFO: [HLS 200-10] On os "CentOS release 6.10 (Final)"
+INFO: [HLS 200-10] In directory '/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_dss545/49961553721514025393
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) polyvec.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/opt/Xilinx2018/Vivado/2018.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'dss545' on host 'dark-knight.poly.edu' (Linux_x86_64 version 2.6.32-754.9.1.el6.x86_64) on Wed Mar 27 17:18:41 EDT 2019
+INFO: [HLS 200-10] On os "CentOS release 6.10 (Final)"
+INFO: [HLS 200-10] In directory '/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_dss545/54661553721521136624
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) reduce.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/opt/Xilinx2018/Vivado/2018.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'dss545' on host 'dark-knight.poly.edu' (Linux_x86_64 version 2.6.32-754.9.1.el6.x86_64) on Wed Mar 27 17:18:47 EDT 2019
+INFO: [HLS 200-10] On os "CentOS release 6.10 (Final)"
+INFO: [HLS 200-10] In directory '/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_dss545/60701553721527934526
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) rng.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/opt/Xilinx2018/Vivado/2018.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'dss545' on host 'dark-knight.poly.edu' (Linux_x86_64 version 2.6.32-754.9.1.el6.x86_64) on Wed Mar 27 17:18:54 EDT 2019
+INFO: [HLS 200-10] On os "CentOS release 6.10 (Final)"
+INFO: [HLS 200-10] In directory '/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_dss545/62481553721534203431
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) rounding.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/opt/Xilinx2018/Vivado/2018.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'dss545' on host 'dark-knight.poly.edu' (Linux_x86_64 version 2.6.32-754.9.1.el6.x86_64) on Wed Mar 27 17:19:00 EDT 2019
+INFO: [HLS 200-10] On os "CentOS release 6.10 (Final)"
+INFO: [HLS 200-10] In directory '/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_dss545/65371553721540723920
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) sign.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/opt/Xilinx2018/Vivado/2018.2/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'dss545' on host 'dark-knight.poly.edu' (Linux_x86_64 version 2.6.32-754.9.1.el6.x86_64) on Wed Mar 27 17:19:06 EDT 2019
+INFO: [HLS 200-10] On os "CentOS release 6.10 (Final)"
+INFO: [HLS 200-10] In directory '/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_dss545/67431553721546933870
+INFO: [APCC 202-1] APCC is done.
+   Generating cosim.tv.exe
+INFO: [COSIM-302] Starting C TB testing ... 
+INFO: [COSIM-333] Generating C post check test bench ...
+INFO: [COSIM-12] Generating RTL test bench ...
+INFO: [COSIM-323] Starting verilog simulation. 
+INFO: [COSIM-15] Starting XSIM ...
+INFO: [COSIM-316] Starting C post checking ...
+Known Answer Tests PASSED. 
+
+
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/opt/Xilinx2018/Vivado/2018.2/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx2018/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_crypto_sign_open_top glbl -prj crypto_sign_open.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile /opt/Xilinx2018/Vivado/2018.2/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s crypto_sign_open 
+Multi-threading is on. Using 38 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/KeccakF1600_StatePer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module KeccakF1600_StatePer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/invntt_frominvmoneOg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module invntt_frominvmoneOg_rom
+INFO: [VRFC 10-311] analyzing module invntt_frominvmoneOg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/ntt_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ntt_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/polyvecl_pointwisdEe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module polyvecl_pointwisdEe_ram
+INFO: [VRFC 10-311] analyzing module polyvecl_pointwisdEe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/crypto_sign_open_ncg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crypto_sign_open_ncg_ram
+INFO: [VRFC 10-311] analyzing module crypto_sign_open_ncg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/crypto_sign_open.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crypto_sign_open
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/ntt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ntt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/crypto_sign_open_lbW.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crypto_sign_open_lbW_ram
+INFO: [VRFC 10-311] analyzing module crypto_sign_open_lbW
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/AESL_automem_m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_m
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/crypto_sign_open_pcA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crypto_sign_open_pcA_ram
+INFO: [VRFC 10-311] analyzing module crypto_sign_open_pcA
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/KeccakF1600_Statebkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module KeccakF1600_Statebkb_rom
+INFO: [VRFC 10-311] analyzing module KeccakF1600_Statebkb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/crypto_sign_open_qcK.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crypto_sign_open_qcK_ram
+INFO: [VRFC 10-311] analyzing module crypto_sign_open_qcK
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/AESL_automem_mlen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_mlen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/keccak_absorb_t.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak_absorb_t_ram
+INFO: [VRFC 10-311] analyzing module keccak_absorb_t
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/polyveck_freeze.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module polyveck_freeze
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/invntt_frominvmont.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module invntt_frominvmont
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/crypto_sign_open.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_crypto_sign_open_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/crypto_sign_open_jbC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crypto_sign_open_jbC_ram
+INFO: [VRFC 10-311] analyzing module crypto_sign_open_jbC
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/crypto_sign_open_rcU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crypto_sign_open_rcU_ram
+INFO: [VRFC 10-311] analyzing module crypto_sign_open_rcU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/crypto_sign_open_hbi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crypto_sign_open_hbi_ram
+INFO: [VRFC 10-311] analyzing module crypto_sign_open_hbi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/ntt_1_zetas.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ntt_1_zetas_rom
+INFO: [VRFC 10-311] analyzing module ntt_1_zetas
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/keccak_absorb_1_t.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak_absorb_1_t_ram
+INFO: [VRFC 10-311] analyzing module keccak_absorb_1_t
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/expand_mat.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module expand_mat
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/unpack_sig.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module unpack_sig
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/expand_mat_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module expand_mat_s_ram
+INFO: [VRFC 10-311] analyzing module expand_mat_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/expand_mat_inbuf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module expand_mat_inbuf_ram
+INFO: [VRFC 10-311] analyzing module expand_mat_inbuf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/ntt_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ntt_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/crypto_sign_open_mb6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crypto_sign_open_mb6_ram
+INFO: [VRFC 10-311] analyzing module crypto_sign_open_mb6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/crypto_sign_open_ibs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crypto_sign_open_ibs_ram
+INFO: [VRFC 10-311] analyzing module crypto_sign_open_ibs
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/crypto_sign_open_ocq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crypto_sign_open_ocq_ram
+INFO: [VRFC 10-311] analyzing module crypto_sign_open_ocq
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/AESL_automem_pk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_pk
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/keccak_squeezeblocks_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak_squeezeblocks_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/AESL_automem_sm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_sm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/crypto_sign_open_g8j.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crypto_sign_open_g8j_ram
+INFO: [VRFC 10-311] analyzing module crypto_sign_open_g8j
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/crypto_sign_open_fYi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crypto_sign_open_fYi_ram
+INFO: [VRFC 10-311] analyzing module crypto_sign_open_fYi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/polyvecl_pointwise_a.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module polyvecl_pointwise_a
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/keccak_absorb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak_absorb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/expand_mat_outputcud.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module expand_mat_outputcud_ram
+INFO: [VRFC 10-311] analyzing module expand_mat_outputcud
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/polyt1_unpack.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module polyt1_unpack
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/keccak_absorb_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak_absorb_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/keccak_squeezeblocks_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak_squeezeblocks_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/polyveck_use_hint.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module polyveck_use_hint
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.crypto_sign_open_fYi_ram
+Compiling module xil_defaultlib.crypto_sign_open_fYi(DataWidth=8...
+Compiling module xil_defaultlib.crypto_sign_open_g8j_ram
+Compiling module xil_defaultlib.crypto_sign_open_g8j(DataWidth=6...
+Compiling module xil_defaultlib.crypto_sign_open_hbi_ram
+Compiling module xil_defaultlib.crypto_sign_open_hbi(DataWidth=8...
+Compiling module xil_defaultlib.crypto_sign_open_ibs_ram
+Compiling module xil_defaultlib.crypto_sign_open_ibs(DataWidth=8...
+Compiling module xil_defaultlib.crypto_sign_open_jbC_ram
+Compiling module xil_defaultlib.crypto_sign_open_jbC(DataWidth=2...
+Compiling module xil_defaultlib.polyvecl_pointwisdEe_ram
+Compiling module xil_defaultlib.polyvecl_pointwisdEe(DataWidth=3...
+Compiling module xil_defaultlib.crypto_sign_open_lbW_ram
+Compiling module xil_defaultlib.crypto_sign_open_lbW(DataWidth=2...
+Compiling module xil_defaultlib.crypto_sign_open_mb6_ram
+Compiling module xil_defaultlib.crypto_sign_open_mb6(DataWidth=3...
+Compiling module xil_defaultlib.crypto_sign_open_ncg_ram
+Compiling module xil_defaultlib.crypto_sign_open_ncg(DataWidth=3...
+Compiling module xil_defaultlib.crypto_sign_open_ocq_ram
+Compiling module xil_defaultlib.crypto_sign_open_ocq(DataWidth=6...
+Compiling module xil_defaultlib.crypto_sign_open_pcA_ram
+Compiling module xil_defaultlib.crypto_sign_open_pcA(DataWidth=1...
+Compiling module xil_defaultlib.crypto_sign_open_qcK_ram
+Compiling module xil_defaultlib.crypto_sign_open_qcK(DataWidth=3...
+Compiling module xil_defaultlib.crypto_sign_open_rcU_ram
+Compiling module xil_defaultlib.crypto_sign_open_rcU(DataWidth=3...
+Compiling module xil_defaultlib.keccak_absorb_t_ram
+Compiling module xil_defaultlib.keccak_absorb_t(DataWidth=8,Addr...
+Compiling module xil_defaultlib.KeccakF1600_Statebkb_rom
+Compiling module xil_defaultlib.KeccakF1600_Statebkb(DataWidth=6...
+Compiling module xil_defaultlib.KeccakF1600_StatePer
+Compiling module xil_defaultlib.keccak_absorb
+Compiling module xil_defaultlib.expand_mat_s_ram
+Compiling module xil_defaultlib.expand_mat_s(DataWidth=64,Addres...
+Compiling module xil_defaultlib.expand_mat_inbuf_ram
+Compiling module xil_defaultlib.expand_mat_inbuf(DataWidth=8,Add...
+Compiling module xil_defaultlib.expand_mat_outputcud_ram
+Compiling module xil_defaultlib.expand_mat_outputcud(DataWidth=8...
+Compiling module xil_defaultlib.keccak_squeezeblocks_3
+Compiling module xil_defaultlib.keccak_absorb_1_t_ram
+Compiling module xil_defaultlib.keccak_absorb_1_t(DataWidth=8,Ad...
+Compiling module xil_defaultlib.keccak_absorb_1
+Compiling module xil_defaultlib.expand_mat
+Compiling module xil_defaultlib.keccak_squeezeblocks_2
+Compiling module xil_defaultlib.unpack_sig
+Compiling module xil_defaultlib.invntt_frominvmoneOg_rom
+Compiling module xil_defaultlib.invntt_frominvmoneOg(DataWidth=2...
+Compiling module xil_defaultlib.invntt_frominvmont
+Compiling module xil_defaultlib.polyvecl_pointwise_a
+Compiling module xil_defaultlib.ntt_1_zetas_rom
+Compiling module xil_defaultlib.ntt_1_zetas(DataWidth=23,Address...
+Compiling module xil_defaultlib.ntt
+Compiling module xil_defaultlib.ntt_1
+Compiling module xil_defaultlib.ntt_2
+Compiling module xil_defaultlib.polyt1_unpack
+Compiling module xil_defaultlib.polyveck_use_hint
+Compiling module xil_defaultlib.polyveck_freeze
+Compiling module xil_defaultlib.crypto_sign_open
+Compiling module xil_defaultlib.AESL_automem_m
+Compiling module xil_defaultlib.AESL_automem_mlen
+Compiling module xil_defaultlib.AESL_automem_sm
+Compiling module xil_defaultlib.AESL_automem_pk
+Compiling module xil_defaultlib.apatb_crypto_sign_open_top
+Compiling module work.glbl
+Built simulation snapshot crypto_sign_open
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source /home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/xsim.dir/crypto_sign_open/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar 27 17:19:21 2019...
+
+****** xsim v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/crypto_sign_open/xsim_script.tcl
+# xsim {crypto_sign_open} -autoloadwcfg -tclbatch {crypto_sign_open.tcl}
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source crypto_sign_open.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [n/a] @ "125000"
+// RTL Simulation : 1 / 1 [n/a] @ "2976065000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 2976105 ns : File "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/decryption/sim/verilog/crypto_sign_open.autotb.v" Line 497
+run: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:21 . Memory (MB): peak = 1272.172 ; gain = 0.000 ; free physical = 383808 ; free virtual = 489204
+## quit
+INFO: [Common 17-206] Exiting xsim at Wed Mar 27 17:19:53 2019...
+Known Answer Tests PASSED. 
+
+
+INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.

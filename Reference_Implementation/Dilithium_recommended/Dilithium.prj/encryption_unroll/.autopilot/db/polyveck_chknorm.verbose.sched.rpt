@@ -1,0 +1,193 @@
+
+
+================================================================
+== Vivado HLS Report for 'polyveck_chknorm'
+================================================================
+* Date:           Tue Mar 19 14:03:15 2019
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        Dilithium.prj
+* Solution:       encryption_unroll
+* Product family: artix7
+* Target device:  xc7a200tfbg676-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     8.621|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+------+-----+------+---------+
+    |   Latency  |  Interval  | Pipeline|
+    | min |  max | min |  max |   Type  |
+    +-----+------+-----+------+---------+
+    |   26|  3866|   26|  3866|   none  |
+    +-----+------+-----+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+-----+------+----------+-----------+-----------+---------+----------+
+        |             |   Latency  | Iteration|  Initiation Interval  |   Trip  |          |
+        |  Loop Name  | min |  max |  Latency |  achieved |   target  |  Count  | Pipelined|
+        +-------------+-----+------+----------+-----------+-----------+---------+----------+
+        |- Loop 1     |   25|  3865|  5 ~ 773 |          -|          -|        5|    no    |
+        | + Loop 1.1  |    3|   770|         3|          -|          -| 1 ~ 256 |    no    |
+        +-------------+-----+------+----------+-----------+-----------+---------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!tmp)
+3 --> 
+	4  / (!tmp_i)
+	5  / (tmp_i)
+4 --> 
+	5  / true
+5 --> 
+	3  / (!tmp_i & tmp_171_i)
+	2  / (tmp_i) | (!tmp_171_i)
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.35>
+ST_1 : Operation 6 [1/1] (1.35ns)   --->   "br label %1" [polyvec.c:238]   --->   Operation 6 'br' <Predicate = true> <Delay = 1.35>
+
+State 2 <SV = 1> <Delay = 1.35>
+ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%i = phi i3 [ 0, %0 ], [ %i_26, %poly_chknorm.1.exit ]"   --->   Operation 7 'phi' 'i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%ret = phi i32 [ 0, %0 ], [ %ret_1, %poly_chknorm.1.exit ]"   --->   Operation 8 'phi' 'ret' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 9 [1/1] (1.00ns)   --->   "%tmp = icmp eq i3 %i, -3" [polyvec.c:238]   --->   Operation 9 'icmp' 'tmp' <Predicate = true> <Delay = 1.00> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 5, i64 5, i64 5)"   --->   Operation 10 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/1] (1.34ns)   --->   "%i_26 = add i3 %i, 1" [polyvec.c:238]   --->   Operation 11 'add' 'i_26' <Predicate = true> <Delay = 1.34> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.18> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "br i1 %tmp, label %5, label %2" [polyvec.c:238]   --->   Operation 12 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%tmp_s = call i11 @_ssdm_op_BitConcatenate.i11.i3.i8(i3 %i, i8 0)" [polyvec.c:238]   --->   Operation 13 'bitconcatenate' 'tmp_s' <Predicate = (!tmp)> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%tmp_589_cast = zext i11 %tmp_s to i12" [poly.c:145->polyvec.c:239]   --->   Operation 14 'zext' 'tmp_589_cast' <Predicate = (!tmp)> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (1.35ns)   --->   "br label %3" [poly.c:145->polyvec.c:239]   --->   Operation 15 'br' <Predicate = (!tmp)> <Delay = 1.35>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "ret i32 %ret" [polyvec.c:241]   --->   Operation 16 'ret' <Predicate = (tmp)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 4.53>
+ST_3 : Operation 17 [1/1] (0.00ns)   --->   "%i_i = phi i9 [ 0, %2 ], [ %i_2, %4 ]"   --->   Operation 17 'phi' 'i_i' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 18 [1/1] (1.34ns)   --->   "%tmp_i = icmp eq i9 %i_i, -256" [poly.c:145->polyvec.c:239]   --->   Operation 18 'icmp' 'tmp_i' <Predicate = true> <Delay = 1.34> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 19 [1/1] (0.00ns)   --->   "%empty_45 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1, i64 256, i64 128)"   --->   Operation 19 'speclooptripcount' 'empty_45' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 20 [1/1] (1.73ns)   --->   "%i_2 = add i9 %i_i, 1" [poly.c:145->polyvec.c:239]   --->   Operation 20 'add' 'i_2' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.18> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 21 [1/1] (1.35ns)   --->   "br i1 %tmp_i, label %poly_chknorm.1.exit, label %4" [poly.c:145->polyvec.c:239]   --->   Operation 21 'br' <Predicate = true> <Delay = 1.35>
+ST_3 : Operation 22 [1/1] (0.00ns)   --->   "%tmp_i_cast = zext i9 %i_i to i12" [poly.c:147->polyvec.c:239]   --->   Operation 22 'zext' 'tmp_i_cast' <Predicate = (!tmp_i)> <Delay = 0.00>
+ST_3 : Operation 23 [1/1] (1.76ns)   --->   "%tmp_585 = add i12 %tmp_589_cast, %tmp_i_cast" [poly.c:147->polyvec.c:239]   --->   Operation 23 'add' 'tmp_585' <Predicate = (!tmp_i)> <Delay = 1.76> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.18> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%tmp_590_cast = zext i12 %tmp_585 to i64" [poly.c:147->polyvec.c:239]   --->   Operation 24 'zext' 'tmp_590_cast' <Predicate = (!tmp_i)> <Delay = 0.00>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%v_vec_coeffs_addr = getelementptr [1280 x i32]* %v_vec_coeffs, i64 0, i64 %tmp_590_cast" [poly.c:147->polyvec.c:239]   --->   Operation 25 'getelementptr' 'v_vec_coeffs_addr' <Predicate = (!tmp_i)> <Delay = 0.00>
+ST_3 : Operation 26 [2/2] (2.77ns)   --->   "%v_vec_coeffs_load = load i32* %v_vec_coeffs_addr, align 4" [poly.c:147->polyvec.c:239]   --->   Operation 26 'load' 'v_vec_coeffs_load' <Predicate = (!tmp_i)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1280> <RAM>
+
+State 4 <SV = 3> <Delay = 2.77>
+ST_4 : Operation 27 [1/2] (2.77ns)   --->   "%v_vec_coeffs_load = load i32* %v_vec_coeffs_addr, align 4" [poly.c:147->polyvec.c:239]   --->   Operation 27 'load' 'v_vec_coeffs_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1280> <RAM>
+
+State 5 <SV = 4> <Delay = 8.62>
+ST_5 : Operation 28 [1/1] (2.18ns)   --->   "%t = sub i32 4190208, %v_vec_coeffs_load" [poly.c:147->polyvec.c:239]   --->   Operation 28 'sub' 't' <Predicate = (!tmp_i)> <Delay = 2.18> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.18> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 29 [1/1] (0.00ns) (grouped into LUT with out node t_17)   --->   "%tmp_586 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %t, i32 31)" [poly.c:148->polyvec.c:239]   --->   Operation 29 'bitselect' 'tmp_586' <Predicate = (!tmp_i)> <Delay = 0.00>
+ST_5 : Operation 30 [1/1] (0.00ns) (grouped into LUT with out node t_17)   --->   "%tmp_170_i = select i1 %tmp_586, i32 -1, i32 0" [poly.c:148->polyvec.c:239]   --->   Operation 30 'select' 'tmp_170_i' <Predicate = (!tmp_i)> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.81> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 31 [1/1] (0.00ns) (grouped into LUT with out node t_17)   --->   "%t_16 = xor i32 %t, %tmp_170_i" [poly.c:148->polyvec.c:239]   --->   Operation 31 'xor' 't_16' <Predicate = (!tmp_i)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 32 [1/1] (2.18ns) (out node of the LUT)   --->   "%t_17 = sub i32 4190208, %t_16" [poly.c:149->polyvec.c:239]   --->   Operation 32 'sub' 't_17' <Predicate = (!tmp_i)> <Delay = 2.18> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.18> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 33 [1/1] (2.11ns)   --->   "%tmp_171_i = icmp ult i32 %t_17, 261613" [poly.c:151->polyvec.c:239]   --->   Operation 33 'icmp' 'tmp_171_i' <Predicate = (!tmp_i)> <Delay = 2.11> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.11> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 34 [1/1] (1.35ns)   --->   "br i1 %tmp_171_i, label %3, label %poly_chknorm.1.exit" [poly.c:151->polyvec.c:239]   --->   Operation 34 'br' <Predicate = (!tmp_i)> <Delay = 1.35>
+ST_5 : Operation 35 [1/1] (0.00ns) (grouped into LUT with out node tmp_36)   --->   "%p_0_i = phi i1 [ false, %3 ], [ true, %4 ]"   --->   Operation 35 'phi' 'p_0_i' <Predicate = (tmp_i) | (!tmp_171_i)> <Delay = 0.00>
+ST_5 : Operation 36 [1/1] (0.00ns) (grouped into LUT with out node tmp_36)   --->   "%tmp_587 = trunc i32 %ret to i1" [polyvec.c:239]   --->   Operation 36 'trunc' 'tmp_587' <Predicate = (tmp_i) | (!tmp_171_i)> <Delay = 0.00>
+ST_5 : Operation 37 [1/1] (0.80ns) (out node of the LUT)   --->   "%tmp_36 = or i1 %tmp_587, %p_0_i" [polyvec.c:239]   --->   Operation 37 'or' 'tmp_36' <Predicate = (tmp_i) | (!tmp_171_i)> <Delay = 0.80> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 38 [1/1] (0.00ns)   --->   "%tmp_37 = call i31 @_ssdm_op_PartSelect.i31.i32.i32.i32(i32 %ret, i32 1, i32 31)" [polyvec.c:239]   --->   Operation 38 'partselect' 'tmp_37' <Predicate = (tmp_i) | (!tmp_171_i)> <Delay = 0.00>
+ST_5 : Operation 39 [1/1] (0.00ns)   --->   "%ret_1 = call i32 @_ssdm_op_BitConcatenate.i32.i31.i1(i31 %tmp_37, i1 %tmp_36)" [polyvec.c:239]   --->   Operation 39 'bitconcatenate' 'ret_1' <Predicate = (tmp_i) | (!tmp_171_i)> <Delay = 0.00>
+ST_5 : Operation 40 [1/1] (0.00ns)   --->   "br label %1" [polyvec.c:238]   --->   Operation 40 'br' <Predicate = (tmp_i) | (!tmp_171_i)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.35ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', polyvec.c:238) [4]  (1.35 ns)
+
+ <State 2>: 1.35ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', poly.c:145->polyvec.c:239) [15]  (1.35 ns)
+
+ <State 3>: 4.54ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', poly.c:145->polyvec.c:239) [15]  (0 ns)
+	'add' operation ('tmp_585', poly.c:147->polyvec.c:239) [22]  (1.76 ns)
+	'getelementptr' operation ('v_vec_coeffs_addr', poly.c:147->polyvec.c:239) [24]  (0 ns)
+	'load' operation ('v_vec_coeffs_load', poly.c:147->polyvec.c:239) on array 'v_vec_coeffs' [25]  (2.77 ns)
+
+ <State 4>: 2.77ns
+The critical path consists of the following:
+	'load' operation ('v_vec_coeffs_load', poly.c:147->polyvec.c:239) on array 'v_vec_coeffs' [25]  (2.77 ns)
+
+ <State 5>: 8.62ns
+The critical path consists of the following:
+	'sub' operation ('t', poly.c:147->polyvec.c:239) [26]  (2.18 ns)
+	'xor' operation ('t', poly.c:148->polyvec.c:239) [29]  (0 ns)
+	'sub' operation ('t', poly.c:149->polyvec.c:239) [30]  (2.18 ns)
+	'icmp' operation ('tmp_171_i', poly.c:151->polyvec.c:239) [31]  (2.11 ns)
+	multiplexor before 'phi' operation ('p_0_i') [34]  (1.35 ns)
+	'phi' operation ('p_0_i') [34]  (0 ns)
+	'or' operation ('tmp_36', polyvec.c:239) [36]  (0.8 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

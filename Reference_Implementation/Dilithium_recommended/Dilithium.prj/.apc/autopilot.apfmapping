@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="api.h" path="/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/api.h"/>
+    <originFiles name="fips202.c" path="/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/fips202.c"/>
+    <originFiles name="fips202.h" path="/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/fips202.h"/>
+    <originFiles name="ntt.c" path="/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/ntt.c"/>
+    <originFiles name="ntt.h" path="/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/ntt.h"/>
+    <originFiles name="packing.c" path="/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/packing.c"/>
+    <originFiles name="packing.h" path="/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/packing.h"/>
+    <originFiles name="params.h" path="/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/params.h"/>
+    <originFiles name="poly.c" path="/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/poly.c"/>
+    <originFiles name="poly.h" path="/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/poly.h"/>
+    <originFiles name="polyvec.c" path="/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/polyvec.c"/>
+    <originFiles name="polyvec.h" path="/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/polyvec.h"/>
+    <originFiles name="reduce.c" path="/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/reduce.c"/>
+    <originFiles name="reduce.h" path="/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/reduce.h"/>
+    <originFiles name="rng.c" path="/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/rng.c"/>
+    <originFiles name="rng.h" path="/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/rng.h"/>
+    <originFiles name="rounding.c" path="/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/rounding.c"/>
+    <originFiles name="rounding.h" path="/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/rounding.h"/>
+    <originFiles name="sign.c" path="/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/sign.c"/>
+    <originFiles name="sign.h" path="/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/sign.h"/>
+  </source>
+  <testbench>
+    <originFiles name="aes.c" path="/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/aes.c"/>
+    <originFiles name="aes.h" path="/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/aes.h"/>
+    <originFiles name="newtest_sign.c" path="/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/newtest_sign.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

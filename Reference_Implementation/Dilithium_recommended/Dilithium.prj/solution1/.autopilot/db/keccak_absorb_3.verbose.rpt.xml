@@ -1,0 +1,160 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'keccak_absorb_3'" level="0">
+<item name = "Date">Wed Mar 27 17:23:02 2019
+</item>
+<item name = "Version">2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)</item>
+<item name = "Project">Dilithium.prj</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">artix7</item>
+<item name = "Target device">xc7a200tfbg676-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 6.352, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">663, 663, 663, 663, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">25, 25, 1, -, -, 25, no</column>
+<column name="- Loop 2">168, 168, 1, -, -, 168, no</column>
+<column name="- Loop 3">66, 66, 2, -, -, 33, no</column>
+<column name="- Loop 4">399, 399, 19, -, -, 21, no</column>
+<column name=" + Loop 4.1">16, 16, 2, -, -, 8, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, -, -, -</column>
+<column name="Expression">-, -, 0, 462</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">-, -, -, -</column>
+<column name="Memory">1, -, 0, 0</column>
+<column name="Multiplexer">-, -, -, 203</column>
+<column name="Register">-, -, 133, -</column>
+<specialColumn name="Available">730, 740, 269200, 129000</specialColumn>
+<specialColumn name="Utilization (%)">~0, 0, ~0, ~0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="t_U">keccak_absorb_3_t, 1, 0, 0, 200, 8, 1, 1600</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="i_41_fu_221_p2">+, 0, 0, 15, 5, 1</column>
+<column name="i_42_fu_238_p2">+, 0, 0, 15, 8, 1</column>
+<column name="i_43_fu_279_p2">+, 0, 0, 15, 5, 1</column>
+<column name="i_6_fu_299_p2">+, 0, 0, 13, 4, 1</column>
+<column name="sum_i5_fu_309_p2">+, 0, 0, 15, 8, 8</column>
+<column name="tmp_102_fu_260_p2">+, 0, 0, 15, 6, 1</column>
+<column name="exitcond1_fu_254_p2">icmp, 0, 0, 11, 6, 6</column>
+<column name="exitcond2_fu_273_p2">icmp, 0, 0, 11, 5, 5</column>
+<column name="exitcond_fu_232_p2">icmp, 0, 0, 11, 8, 8</column>
+<column name="tmp_fu_215_p2">icmp, 0, 0, 11, 5, 4</column>
+<column name="tmp_i3_fu_293_p2">icmp, 0, 0, 11, 4, 5</column>
+<column name="r_fu_350_p2">or, 0, 0, 64, 64, 64</column>
+<column name="t_d1">or, 0, 0, 9, 8, 9</column>
+<column name="tmp_226_i_fu_344_p2">shl, 0, 0, 182, 64, 64</column>
+<column name="tmp_105_fu_356_p2">xor, 0, 0, 64, 64, 64</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">50, 11, 1, 11</column>
+<column name="i_2_reg_157">9, 2, 8, 16</column>
+<column name="i_3_reg_168">9, 2, 6, 12</column>
+<column name="i_4_reg_179">9, 2, 5, 10</column>
+<column name="i_i1_reg_191">9, 2, 4, 8</column>
+<column name="i_reg_146">9, 2, 5, 10</column>
+<column name="r_i2_reg_203">9, 2, 64, 128</column>
+<column name="s_address0">21, 4, 5, 20</column>
+<column name="s_d0">15, 3, 64, 192</column>
+<column name="t_address0">27, 5, 8, 40</column>
+<column name="t_address1">15, 3, 8, 24</column>
+<column name="t_d0">21, 4, 8, 32</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">10, 0, 10, 0</column>
+<column name="i_2_reg_157">8, 0, 8, 0</column>
+<column name="i_3_reg_168">6, 0, 6, 0</column>
+<column name="i_43_reg_406">5, 0, 5, 0</column>
+<column name="i_4_reg_179">5, 0, 5, 0</column>
+<column name="i_6_reg_419">4, 0, 4, 0</column>
+<column name="i_i1_reg_191">4, 0, 4, 0</column>
+<column name="i_reg_146">5, 0, 5, 0</column>
+<column name="r_i2_reg_203">64, 0, 64, 0</column>
+<column name="s_addr_1_reg_429">5, 0, 5, 0</column>
+<column name="tmp_100_reg_379">6, 0, 64, 58</column>
+<column name="tmp_102_reg_387">6, 0, 6, 0</column>
+<column name="tmp_103_reg_411">5, 0, 8, 3</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, keccak_absorb.3, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, keccak_absorb.3, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, keccak_absorb.3, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, keccak_absorb.3, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, keccak_absorb.3, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, keccak_absorb.3, return value</column>
+<column name="s_address0">out, 5, ap_memory, s, array</column>
+<column name="s_ce0">out, 1, ap_memory, s, array</column>
+<column name="s_we0">out, 1, ap_memory, s, array</column>
+<column name="s_d0">out, 64, ap_memory, s, array</column>
+<column name="s_q0">in, 64, ap_memory, s, array</column>
+<column name="m_address0">out, 6, ap_memory, m, array</column>
+<column name="m_ce0">out, 1, ap_memory, m, array</column>
+<column name="m_q0">in, 8, ap_memory, m, array</column>
+</table>
+</item>
+</section>
+</profile>

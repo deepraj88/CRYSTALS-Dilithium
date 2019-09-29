@@ -1,0 +1,7 @@
+Running: xsim.dir/crypto_sign/xsimk -simmode gui -wdb crypto_sign.wdb -simrunnum 0 -socket 36064
+Design successfully loaded
+Design Loading Memory Usage: 39472 KB (Peak: 39472 KB)
+Design Loading CPU Usage: 10 ms
+Simulation completed
+Simulation Memory Usage: 127712 KB (Peak: 180792 KB)
+Simulation CPU Usage: 87340 ms

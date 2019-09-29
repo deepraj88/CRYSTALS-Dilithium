@@ -1,0 +1,117 @@
+
+
+================================================================
+== Vivado HLS Report for 'reduce32'
+================================================================
+* Date:           Tue Mar 19 14:03:03 2019
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        Dilithium.prj
+* Solution:       encryption_unroll
+* Product family: artix7
+* Target device:  xc7a200tfbg676-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     3.999|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    0|    0|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.99>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%a_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %a) nounwind"   --->   Operation 2 'read' 'a_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%t = trunc i32 %a_read to i23" [reduce.c:39]   --->   Operation 3 'trunc' 't' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%t_cast = zext i23 %t to i24" [reduce.c:39]   --->   Operation 4 'zext' 't_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%tmp = call i9 @_ssdm_op_PartSelect.i9.i32.i32.i32(i32 %a_read, i32 23, i32 31)" [reduce.c:40]   --->   Operation 5 'partselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%a_assign_cast = zext i9 %tmp to i24" [reduce.c:40]   --->   Operation 6 'zext' 'a_assign_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%tmp_s = call i22 @_ssdm_op_BitConcatenate.i22.i9.i13(i9 %tmp, i13 0)" [reduce.c:41]   --->   Operation 7 'bitconcatenate' 'tmp_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%tmp_cast = zext i22 %tmp_s to i25" [reduce.c:41]   --->   Operation 8 'zext' 'tmp_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (1.98ns)   --->   "%tmp_26 = sub i24 %t_cast, %a_assign_cast" [reduce.c:41]   --->   Operation 9 'sub' 'tmp_26' <Predicate = true> <Delay = 1.98> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%tmp_35_cast = sext i24 %tmp_26 to i25" [reduce.c:41]   --->   Operation 10 'sext' 'tmp_35_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (2.01ns)   --->   "%t_2 = add i25 %tmp_cast, %tmp_35_cast" [reduce.c:41]   --->   Operation 11 'add' 't_2' <Predicate = true> <Delay = 2.01> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "ret i25 %t_2" [reduce.c:42]   --->   Operation 12 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 4ns
+The critical path consists of the following:
+	wire read on port 'a' [2]  (0 ns)
+	'sub' operation ('tmp_26', reduce.c:41) [9]  (1.99 ns)
+	'add' operation ('t', reduce.c:41) [11]  (2.01 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

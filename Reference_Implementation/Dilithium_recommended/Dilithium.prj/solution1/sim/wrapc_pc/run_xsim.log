@@ -1,0 +1,270 @@
+Known Answer Tests PASSED. 
+
+
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/opt/Xilinx2018/Vivado/2018.2/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx2018/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_crypto_sign_top glbl -prj crypto_sign.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile /opt/Xilinx2018/Vivado/2018.2/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s crypto_sign 
+Multi-threading is on. Using 38 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/crypto_sign.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crypto_sign
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/crypto_sign_inbuf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crypto_sign_inbuf_ram
+INFO: [VRFC 10-311] analyzing module crypto_sign_inbuf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/crypto_sign_mat_vjbC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crypto_sign_mat_vjbC_ram
+INFO: [VRFC 10-311] analyzing module crypto_sign_mat_vjbC
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/KeccakF1600_StatePer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module KeccakF1600_StatePer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/invntt_frominvmoneOg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module invntt_frominvmoneOg_rom
+INFO: [VRFC 10-311] analyzing module invntt_frominvmoneOg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/ntt_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ntt_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/AESL_automem_smlen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_smlen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/polyvecl_pointwisdEe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module polyvecl_pointwisdEe_ram
+INFO: [VRFC 10-311] analyzing module polyvecl_pointwisdEe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/polyveck_chknorm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module polyveck_chknorm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/polyveck_decompose.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module polyveck_decompose
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/ntt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ntt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/crypto_sign_c_coehbi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crypto_sign_c_coehbi_ram
+INFO: [VRFC 10-311] analyzing module crypto_sign_c_coehbi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/keccak_squeezeblocks_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak_squeezeblocks_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/AESL_automem_m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_m
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/AESL_automem_sk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_sk
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/KeccakF1600_Statebkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module KeccakF1600_Statebkb_rom
+INFO: [VRFC 10-311] analyzing module KeccakF1600_Statebkb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/pack_sig.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pack_sig
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/crypto_sign_state.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crypto_sign_state_ram
+INFO: [VRFC 10-311] analyzing module crypto_sign_state
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/keccak_absorb_t.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak_absorb_t_ram
+INFO: [VRFC 10-311] analyzing module keccak_absorb_t
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/polyveck_freeze.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module polyveck_freeze
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/crypto_sign_t0_vepcA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crypto_sign_t0_vepcA_ram
+INFO: [VRFC 10-311] analyzing module crypto_sign_t0_vepcA
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/crypto_sign_outbuf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crypto_sign_outbuf_ram
+INFO: [VRFC 10-311] analyzing module crypto_sign_outbuf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/crypto_sign_z_vecncg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crypto_sign_z_vecncg_ram
+INFO: [VRFC 10-311] analyzing module crypto_sign_z_vecncg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/crypto_sign_seedbuf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crypto_sign_seedbuf_ram
+INFO: [VRFC 10-311] analyzing module crypto_sign_seedbuf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/invntt_frominvmont.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module invntt_frominvmont
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/invntt_frominvmont_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module invntt_frominvmont_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/crypto_sign_h_vecsc4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crypto_sign_h_vecsc4_ram
+INFO: [VRFC 10-311] analyzing module crypto_sign_h_vecsc4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/keccak_absorb_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak_absorb_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/ntt_1_zetas.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ntt_1_zetas_rom
+INFO: [VRFC 10-311] analyzing module ntt_1_zetas
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/expand_mat.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module expand_mat
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/challenge_outbuf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module challenge_outbuf_ram
+INFO: [VRFC 10-311] analyzing module challenge_outbuf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/expand_mat_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module expand_mat_s_ram
+INFO: [VRFC 10-311] analyzing module expand_mat_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/expand_mat_inbuf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module expand_mat_inbuf_ram
+INFO: [VRFC 10-311] analyzing module expand_mat_inbuf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/ntt_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ntt_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/crypto_sign_s1_vekbM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crypto_sign_s1_vekbM_ram
+INFO: [VRFC 10-311] analyzing module crypto_sign_s1_vekbM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/crypto_sign.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_crypto_sign_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/crypto_sign_yhat_mb6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crypto_sign_yhat_mb6_ram
+INFO: [VRFC 10-311] analyzing module crypto_sign_yhat_mb6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/keccak_absorb_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak_absorb_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/rej_gamma1m1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rej_gamma1m1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/keccak_squeezeblocks_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak_squeezeblocks_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/AESL_automem_sm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_sm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/crypto_sign_w_vecqcK.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crypto_sign_w_vecqcK_ram
+INFO: [VRFC 10-311] analyzing module crypto_sign_w_vecqcK
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/challenge.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module challenge
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/challenge_state.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module challenge_state_ram
+INFO: [VRFC 10-311] analyzing module challenge_state
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/unpack_sk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module unpack_sk
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/polyvecl_pointwise_a.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module polyvecl_pointwise_a
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/keccak_absorb_3_t.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak_absorb_3_t_ram
+INFO: [VRFC 10-311] analyzing module keccak_absorb_3_t
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/keccak_absorb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak_absorb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/crypto_sign_s2_veocq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crypto_sign_s2_veocq_ram
+INFO: [VRFC 10-311] analyzing module crypto_sign_s2_veocq
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/expand_mat_outputcud.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module expand_mat_outputcud_ram
+INFO: [VRFC 10-311] analyzing module expand_mat_outputcud
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/crypto_sign_y_veclbW.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crypto_sign_y_veclbW_ram
+INFO: [VRFC 10-311] analyzing module crypto_sign_y_veclbW
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/keccak_absorb_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak_absorb_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/challenge_inbuf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module challenge_inbuf_ram
+INFO: [VRFC 10-311] analyzing module challenge_inbuf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/keccak_squeezeblocks_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module keccak_squeezeblocks_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/polyveck_make_hint.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module polyveck_make_hint
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.crypto_sign_inbuf_ram
+Compiling module xil_defaultlib.crypto_sign_inbuf(DataWidth=8,Ad...
+Compiling module xil_defaultlib.crypto_sign_outbuf_ram
+Compiling module xil_defaultlib.crypto_sign_outbuf(DataWidth=8,A...
+Compiling module xil_defaultlib.crypto_sign_state_ram
+Compiling module xil_defaultlib.crypto_sign_state(DataWidth=64,A...
+Compiling module xil_defaultlib.challenge_outbuf_ram
+Compiling module xil_defaultlib.challenge_outbuf(DataWidth=8,Add...
+Compiling module xil_defaultlib.crypto_sign_seedbuf_ram
+Compiling module xil_defaultlib.crypto_sign_seedbuf(DataWidth=8,...
+Compiling module xil_defaultlib.crypto_sign_c_coehbi_ram
+Compiling module xil_defaultlib.crypto_sign_c_coehbi(DataWidth=2...
+Compiling module xil_defaultlib.polyvecl_pointwisdEe_ram
+Compiling module xil_defaultlib.polyvecl_pointwisdEe(DataWidth=3...
+Compiling module xil_defaultlib.crypto_sign_mat_vjbC_ram
+Compiling module xil_defaultlib.crypto_sign_mat_vjbC(DataWidth=2...
+Compiling module xil_defaultlib.crypto_sign_s1_vekbM_ram
+Compiling module xil_defaultlib.crypto_sign_s1_vekbM(DataWidth=3...
+Compiling module xil_defaultlib.crypto_sign_y_veclbW_ram
+Compiling module xil_defaultlib.crypto_sign_y_veclbW(DataWidth=2...
+Compiling module xil_defaultlib.crypto_sign_yhat_mb6_ram
+Compiling module xil_defaultlib.crypto_sign_yhat_mb6(DataWidth=3...
+Compiling module xil_defaultlib.crypto_sign_z_vecncg_ram
+Compiling module xil_defaultlib.crypto_sign_z_vecncg(DataWidth=3...
+Compiling module xil_defaultlib.crypto_sign_s2_veocq_ram
+Compiling module xil_defaultlib.crypto_sign_s2_veocq(DataWidth=3...
+Compiling module xil_defaultlib.crypto_sign_t0_vepcA_ram
+Compiling module xil_defaultlib.crypto_sign_t0_vepcA(DataWidth=3...
+Compiling module xil_defaultlib.crypto_sign_w_vecqcK_ram
+Compiling module xil_defaultlib.crypto_sign_w_vecqcK(DataWidth=3...
+Compiling module xil_defaultlib.crypto_sign_h_vecsc4_ram
+Compiling module xil_defaultlib.crypto_sign_h_vecsc4(DataWidth=1...
+Compiling module xil_defaultlib.challenge_inbuf_ram
+Compiling module xil_defaultlib.challenge_inbuf(DataWidth=8,Addr...
+Compiling module xil_defaultlib.challenge_state_ram
+Compiling module xil_defaultlib.challenge_state(DataWidth=64,Add...
+Compiling module xil_defaultlib.keccak_absorb_3_t_ram
+Compiling module xil_defaultlib.keccak_absorb_3_t(DataWidth=8,Ad...
+Compiling module xil_defaultlib.KeccakF1600_Statebkb_rom
+Compiling module xil_defaultlib.KeccakF1600_Statebkb(DataWidth=6...
+Compiling module xil_defaultlib.KeccakF1600_StatePer
+Compiling module xil_defaultlib.keccak_absorb_2
+Compiling module xil_defaultlib.keccak_squeezeblocks_2
+Compiling module xil_defaultlib.challenge
+Compiling module xil_defaultlib.keccak_absorb_t_ram
+Compiling module xil_defaultlib.keccak_absorb_t(DataWidth=8,Addr...
+Compiling module xil_defaultlib.keccak_absorb
+Compiling module xil_defaultlib.expand_mat_s_ram
+Compiling module xil_defaultlib.expand_mat_s(DataWidth=64,Addres...
+Compiling module xil_defaultlib.expand_mat_inbuf_ram
+Compiling module xil_defaultlib.expand_mat_inbuf(DataWidth=8,Add...
+Compiling module xil_defaultlib.expand_mat_outputcud_ram
+Compiling module xil_defaultlib.expand_mat_outputcud(DataWidth=8...
+Compiling module xil_defaultlib.keccak_squeezeblocks_3
+Compiling module xil_defaultlib.keccak_absorb_3
+Compiling module xil_defaultlib.expand_mat
+Compiling module xil_defaultlib.keccak_squeezeblocks_1
+Compiling module xil_defaultlib.pack_sig
+Compiling module xil_defaultlib.unpack_sk
+Compiling module xil_defaultlib.invntt_frominvmoneOg_rom
+Compiling module xil_defaultlib.invntt_frominvmoneOg(DataWidth=2...
+Compiling module xil_defaultlib.invntt_frominvmont_1
+Compiling module xil_defaultlib.invntt_frominvmont
+Compiling module xil_defaultlib.polyvecl_pointwise_a
+Compiling module xil_defaultlib.ntt_1_zetas_rom
+Compiling module xil_defaultlib.ntt_1_zetas(DataWidth=23,Address...
+Compiling module xil_defaultlib.ntt
+Compiling module xil_defaultlib.ntt_1
+Compiling module xil_defaultlib.ntt_2
+Compiling module xil_defaultlib.polyveck_make_hint
+Compiling module xil_defaultlib.rej_gamma1m1
+Compiling module xil_defaultlib.keccak_absorb_1
+Compiling module xil_defaultlib.polyveck_decompose
+Compiling module xil_defaultlib.polyveck_chknorm
+Compiling module xil_defaultlib.polyveck_freeze
+Compiling module xil_defaultlib.crypto_sign
+Compiling module xil_defaultlib.AESL_automem_sm
+Compiling module xil_defaultlib.AESL_automem_smlen
+Compiling module xil_defaultlib.AESL_automem_m
+Compiling module xil_defaultlib.AESL_automem_sk
+Compiling module xil_defaultlib.apatb_crypto_sign_top
+Compiling module work.glbl
+Built simulation snapshot crypto_sign
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source /home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/xsim.dir/crypto_sign/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar 27 17:25:37 2019...
+
+****** xsim v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/crypto_sign/xsim_script.tcl
+# xsim {crypto_sign} -autoloadwcfg -tclbatch {crypto_sign.tcl}
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source crypto_sign.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [n/a] @ "125000"
+// RTL Simulation : 1 / 1 [n/a] @ "8268465000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 8268505 ns : File "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/crypto_sign.autotb.v" Line 485
+run: Time (s): cpu = 00:00:00.02 ; elapsed = 00:01:27 . Memory (MB): peak = 1272.176 ; gain = 0.000 ; free physical = 383990 ; free virtual = 489401
+## quit
+INFO: [Common 17-206] Exiting xsim at Wed Mar 27 17:27:15 2019...
+Known Answer Tests PASSED. 
+
+

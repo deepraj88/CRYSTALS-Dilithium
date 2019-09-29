@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'ntt.2' to 'ntt_2'." projectName="Dilithium.prj" solutionName="solution1" date="2019-03-27T17:22:31.177-0400" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'keccak_absorb.2' to 'keccak_absorb_2'." projectName="Dilithium.prj" solutionName="solution1" date="2019-03-27T17:22:31.130-0400" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'invntt_frominvmont.1' to 'invntt_frominvmont_1'." projectName="Dilithium.prj" solutionName="solution1" date="2019-03-27T17:22:31.126-0400" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'keccak_squeezeblocks.1' to 'keccak_squeezeblocks_1'." projectName="Dilithium.prj" solutionName="solution1" date="2019-03-27T17:22:31.122-0400" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'keccak_absorb.1' to 'keccak_absorb_1'." projectName="Dilithium.prj" solutionName="solution1" date="2019-03-27T17:22:31.118-0400" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'ntt.1' to 'ntt_1'." projectName="Dilithium.prj" solutionName="solution1" date="2019-03-27T17:22:31.114-0400" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'keccak_squeezeblocks.3' to 'keccak_squeezeblocks_3'." projectName="Dilithium.prj" solutionName="solution1" date="2019-03-27T17:22:31.109-0400" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'keccak_absorb.3' to 'keccak_absorb_3'." projectName="Dilithium.prj" solutionName="solution1" date="2019-03-27T17:22:31.105-0400" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'keccak_squeezeblocks.2' to 'keccak_squeezeblocks_2'." projectName="Dilithium.prj" solutionName="solution1" date="2019-03-27T17:22:31.101-0400" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'KeccakF1600_StatePermute' to 'KeccakF1600_StatePer' (fips202.c:102:1)" projectName="Dilithium.prj" solutionName="solution1" date="2019-03-27T17:22:31.087-0400" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'polyvecl_pointwise_acc_invmontgomery' to 'polyvecl_pointwise_a' (poly.c:19:24)" projectName="Dilithium.prj" solutionName="solution1" date="2019-03-27T17:22:27.649-0400" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'ntt.2' to 'ntt_2'." projectName="Dilithium.prj" solutionName="decryption" date="2019-03-27T17:16:41.526-0400" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'ntt.1' to 'ntt_1'." projectName="Dilithium.prj" solutionName="decryption" date="2019-03-27T17:16:41.496-0400" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'keccak_squeezeblocks.3' to 'keccak_squeezeblocks_3'." projectName="Dilithium.prj" solutionName="decryption" date="2019-03-27T17:16:41.492-0400" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'keccak_absorb.1' to 'keccak_absorb_1'." projectName="Dilithium.prj" solutionName="decryption" date="2019-03-27T17:16:41.489-0400" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'keccak_squeezeblocks.2' to 'keccak_squeezeblocks_2'." projectName="Dilithium.prj" solutionName="decryption" date="2019-03-27T17:16:41.487-0400" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'KeccakF1600_StatePermute' to 'KeccakF1600_StatePer' (fips202.c:102:1)" projectName="Dilithium.prj" solutionName="decryption" date="2019-03-27T17:16:41.472-0400" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'polyvecl_pointwise_acc_invmontgomery' to 'polyvecl_pointwise_a' (poly.c:19:24)" projectName="Dilithium.prj" solutionName="decryption" date="2019-03-27T17:16:39.488-0400" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'ntt.2' to 'ntt_2'." projectName="Dilithium.prj" solutionName="encryption_unroll" date="2019-03-19T14:02:55.086-0400" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'keccak_absorb.2' to 'keccak_absorb_2'." projectName="Dilithium.prj" solutionName="encryption_unroll" date="2019-03-19T14:02:54.788-0400" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'invntt_frominvmont.1' to 'invntt_frominvmont_1'." projectName="Dilithium.prj" solutionName="encryption_unroll" date="2019-03-19T14:02:54.784-0400" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'keccak_squeezeblocks.1' to 'keccak_squeezeblocks_1'." projectName="Dilithium.prj" solutionName="encryption_unroll" date="2019-03-19T14:02:54.780-0400" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'keccak_absorb.1' to 'keccak_absorb_1'." projectName="Dilithium.prj" solutionName="encryption_unroll" date="2019-03-19T14:02:54.776-0400" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'ntt.1' to 'ntt_1'." projectName="Dilithium.prj" solutionName="encryption_unroll" date="2019-03-19T14:02:54.772-0400" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'keccak_squeezeblocks.3' to 'keccak_squeezeblocks_3'." projectName="Dilithium.prj" solutionName="encryption_unroll" date="2019-03-19T14:02:54.768-0400" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'keccak_absorb.3' to 'keccak_absorb_3'." projectName="Dilithium.prj" solutionName="encryption_unroll" date="2019-03-19T14:02:54.763-0400" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'keccak_squeezeblocks.2' to 'keccak_squeezeblocks_2'." projectName="Dilithium.prj" solutionName="encryption_unroll" date="2019-03-19T14:02:54.759-0400" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'KeccakF1600_StatePermute' to 'KeccakF1600_StatePer' (fips202.c:102:1)" projectName="Dilithium.prj" solutionName="encryption_unroll" date="2019-03-19T14:02:54.744-0400" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'polyvecl_pointwise_acc_invmontgomery' to 'polyvecl_pointwise_a' (poly.c:19:24)" projectName="Dilithium.prj" solutionName="encryption_unroll" date="2019-03-19T14:02:46.945-0400" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

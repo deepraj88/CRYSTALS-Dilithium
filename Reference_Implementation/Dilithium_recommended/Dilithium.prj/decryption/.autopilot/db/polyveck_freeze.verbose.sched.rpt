@@ -1,0 +1,192 @@
+
+
+================================================================
+== Vivado HLS Report for 'polyveck_freeze'
+================================================================
+* Date:           Wed Mar 27 17:16:49 2019
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        Dilithium.prj
+* Solution:       decryption
+* Product family: artix7
+* Target device:  xc7a200tfbg676-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     6.941|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +------+------+------+------+---------+
+    |   Latency   |   Interval  | Pipeline|
+    |  min |  max |  min |  max |   Type  |
+    +------+------+------+------+---------+
+    |  3851|  3851|  3851|  3851|   none  |
+    +------+------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+------+------+----------+-----------+-----------+------+----------+
+        |             |   Latency   | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  |  min |  max |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+------+------+----------+-----------+-----------+------+----------+
+        |- Loop 1     |  3850|  3850|       770|          -|          -|     5|    no    |
+        | + Loop 1.1  |   768|   768|         3|          -|          -|   256|    no    |
+        +-------------+------+------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 1
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!tmp)
+3 --> 
+	4  / (!tmp_i)
+	2  / (tmp_i)
+4 --> 
+	5  / true
+5 --> 
+	3  / true
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.35>
+ST_1 : Operation 6 [1/1] (1.35ns)   --->   "br label %poly_freeze.exit" [polyvec.c:123]   --->   Operation 6 'br' <Predicate = true> <Delay = 1.35>
+
+State 2 <SV = 1> <Delay = 1.35>
+ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%i = phi i3 [ 0, %0 ], [ %i_15, %poly_freeze.exit.loopexit ]"   --->   Operation 7 'phi' 'i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 8 [1/1] (1.00ns)   --->   "%tmp = icmp eq i3 %i, -3" [polyvec.c:123]   --->   Operation 8 'icmp' 'tmp' <Predicate = true> <Delay = 1.00> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 5, i64 5, i64 5)"   --->   Operation 9 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 10 [1/1] (1.34ns)   --->   "%i_15 = add i3 %i, 1" [polyvec.c:123]   --->   Operation 10 'add' 'i_15' <Predicate = true> <Delay = 1.34> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.18> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "br i1 %tmp, label %4, label %1" [polyvec.c:123]   --->   Operation 11 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%tmp_s = call i11 @_ssdm_op_BitConcatenate.i11.i3.i8(i3 %i, i8 0)" [polyvec.c:123]   --->   Operation 12 'bitconcatenate' 'tmp_s' <Predicate = (!tmp)> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%tmp_68_cast = zext i11 %tmp_s to i12" [poly.c:16->polyvec.c:124]   --->   Operation 13 'zext' 'tmp_68_cast' <Predicate = (!tmp)> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (1.35ns)   --->   "br label %2" [poly.c:19->polyvec.c:124]   --->   Operation 14 'br' <Predicate = (!tmp)> <Delay = 1.35>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "ret void" [polyvec.c:125]   --->   Operation 15 'ret' <Predicate = (tmp)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 4.53>
+ST_3 : Operation 16 [1/1] (0.00ns)   --->   "%i_i = phi i9 [ 0, %1 ], [ %i_16, %3 ]"   --->   Operation 16 'phi' 'i_i' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 17 [1/1] (1.34ns)   --->   "%tmp_i = icmp eq i9 %i_i, -256" [poly.c:19->polyvec.c:124]   --->   Operation 17 'icmp' 'tmp_i' <Predicate = true> <Delay = 1.34> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.34> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 18 [1/1] (0.00ns)   --->   "%empty_35 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 256, i64 256, i64 256)"   --->   Operation 18 'speclooptripcount' 'empty_35' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 19 [1/1] (1.73ns)   --->   "%i_16 = add i9 %i_i, 1" [poly.c:19->polyvec.c:124]   --->   Operation 19 'add' 'i_16' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.18> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 20 [1/1] (0.00ns)   --->   "br i1 %tmp_i, label %poly_freeze.exit.loopexit, label %3" [poly.c:19->polyvec.c:124]   --->   Operation 20 'br' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%tmp_i_cast = zext i9 %i_i to i12" [poly.c:20->polyvec.c:124]   --->   Operation 21 'zext' 'tmp_i_cast' <Predicate = (!tmp_i)> <Delay = 0.00>
+ST_3 : Operation 22 [1/1] (1.76ns)   --->   "%tmp_61 = add i12 %tmp_i_cast, %tmp_68_cast" [poly.c:20->polyvec.c:124]   --->   Operation 22 'add' 'tmp_61' <Predicate = (!tmp_i)> <Delay = 1.76> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.18> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%tmp_69_cast = zext i12 %tmp_61 to i64" [poly.c:20->polyvec.c:124]   --->   Operation 23 'zext' 'tmp_69_cast' <Predicate = (!tmp_i)> <Delay = 0.00>
+ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%v_vec_coeffs_addr = getelementptr [1280 x i32]* %v_vec_coeffs, i64 0, i64 %tmp_69_cast" [poly.c:20->polyvec.c:124]   --->   Operation 24 'getelementptr' 'v_vec_coeffs_addr' <Predicate = (!tmp_i)> <Delay = 0.00>
+ST_3 : Operation 25 [2/2] (2.77ns)   --->   "%v_vec_coeffs_load = load i32* %v_vec_coeffs_addr, align 4" [poly.c:20->polyvec.c:124]   --->   Operation 25 'load' 'v_vec_coeffs_load' <Predicate = (!tmp_i)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1280> <RAM>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "br label %poly_freeze.exit"   --->   Operation 26 'br' <Predicate = (tmp_i)> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 6.94>
+ST_4 : Operation 27 [1/2] (2.77ns)   --->   "%v_vec_coeffs_load = load i32* %v_vec_coeffs_addr, align 4" [poly.c:20->polyvec.c:124]   --->   Operation 27 'load' 'v_vec_coeffs_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1280> <RAM>
+ST_4 : Operation 28 [1/1] (0.00ns)   --->   "%t = trunc i32 %v_vec_coeffs_load to i23" [reduce.c:55->poly.c:20->polyvec.c:124]   --->   Operation 28 'trunc' 't' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 29 [1/1] (0.00ns)   --->   "%t_cast = zext i23 %t to i24" [reduce.c:39->reduce.c:56->poly.c:20->polyvec.c:124]   --->   Operation 29 'zext' 't_cast' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 30 [1/1] (0.00ns)   --->   "%tmp_62 = call i9 @_ssdm_op_PartSelect.i9.i32.i32.i32(i32 %v_vec_coeffs_load, i32 23, i32 31)" [reduce.c:40->reduce.c:56->poly.c:20->polyvec.c:124]   --->   Operation 30 'partselect' 'tmp_62' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 31 [1/1] (0.00ns)   --->   "%a_assign_8_cast = zext i9 %tmp_62 to i24" [reduce.c:40->reduce.c:56->poly.c:20->polyvec.c:124]   --->   Operation 31 'zext' 'a_assign_8_cast' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 32 [1/1] (0.00ns) (grouped into LUT with out node a_assign_9)   --->   "%tmp_i_i_i = call i22 @_ssdm_op_PartSelect.i22.i32.i32.i32(i32 %v_vec_coeffs_load, i32 10, i32 31)" [reduce.c:41->reduce.c:56->poly.c:20->polyvec.c:124]   --->   Operation 32 'partselect' 'tmp_i_i_i' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 33 [1/1] (1.98ns)   --->   "%tmp_41_i_i_i = sub i24 %t_cast, %a_assign_8_cast" [reduce.c:41->reduce.c:56->poly.c:20->polyvec.c:124]   --->   Operation 33 'sub' 'tmp_41_i_i_i' <Predicate = true> <Delay = 1.98> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.18> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 34 [1/1] (0.00ns) (grouped into LUT with out node a_assign_9)   --->   "%tmp_41_i_i_i_cast = sext i24 %tmp_41_i_i_i to i32" [reduce.c:41->reduce.c:56->poly.c:20->polyvec.c:124]   --->   Operation 34 'sext' 'tmp_41_i_i_i_cast' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 35 [1/1] (0.00ns) (grouped into LUT with out node a_assign_9)   --->   "%tmp_63 = or i22 %tmp_i_i_i, 8191" [reduce.c:41->reduce.c:56->poly.c:20->polyvec.c:124]   --->   Operation 35 'or' 'tmp_63' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 36 [1/1] (0.00ns) (grouped into LUT with out node a_assign_9)   --->   "%tmp12 = call i32 @_ssdm_op_BitConcatenate.i32.i10.i22(i10 -2, i22 %tmp_63)" [reduce.c:57->poly.c:20->polyvec.c:124]   --->   Operation 36 'bitconcatenate' 'tmp12' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 37 [1/1] (2.18ns) (out node of the LUT)   --->   "%a_assign_9 = add i32 %tmp12, %tmp_41_i_i_i_cast" [reduce.c:57->poly.c:20->polyvec.c:124]   --->   Operation 37 'add' 'a_assign_9' <Predicate = true> <Delay = 2.18> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.18> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 4.95>
+ST_5 : Operation 38 [1/1] (0.00ns) (grouped into LUT with out node a_assign_s)   --->   "%tmp_64 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %a_assign_9, i32 31)" [reduce.c:58->poly.c:20->polyvec.c:124]   --->   Operation 38 'bitselect' 'tmp_64' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 39 [1/1] (0.00ns) (grouped into LUT with out node a_assign_s)   --->   "%tmp_i_i_cast_cast = select i1 %tmp_64, i32 8380417, i32 0" [reduce.c:58->poly.c:20->polyvec.c:124]   --->   Operation 39 'select' 'tmp_i_i_cast_cast' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 1.13> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 40 [1/1] (2.18ns) (out node of the LUT)   --->   "%a_assign_s = add i32 %a_assign_9, %tmp_i_i_cast_cast" [reduce.c:58->poly.c:20->polyvec.c:124]   --->   Operation 40 'add' 'a_assign_s' <Predicate = true> <Delay = 2.18> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.18> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 41 [1/1] (2.77ns)   --->   "store i32 %a_assign_s, i32* %v_vec_coeffs_addr, align 4" [poly.c:20->polyvec.c:124]   --->   Operation 41 'store' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1280> <RAM>
+ST_5 : Operation 42 [1/1] (0.00ns)   --->   "br label %2" [poly.c:19->polyvec.c:124]   --->   Operation 42 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.35ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', polyvec.c:123) [4]  (1.35 ns)
+
+ <State 2>: 1.35ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', poly.c:19->polyvec.c:124) [14]  (1.35 ns)
+
+ <State 3>: 4.54ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', poly.c:19->polyvec.c:124) [14]  (0 ns)
+	'add' operation ('tmp_61', poly.c:20->polyvec.c:124) [21]  (1.76 ns)
+	'getelementptr' operation ('v_vec_coeffs_addr', poly.c:20->polyvec.c:124) [23]  (0 ns)
+	'load' operation ('a', poly.c:20->polyvec.c:124) on array 'v_vec_coeffs' [24]  (2.77 ns)
+
+ <State 4>: 6.94ns
+The critical path consists of the following:
+	'load' operation ('a', poly.c:20->polyvec.c:124) on array 'v_vec_coeffs' [24]  (2.77 ns)
+	'sub' operation ('tmp_41_i_i_i', reduce.c:41->reduce.c:56->poly.c:20->polyvec.c:124) [30]  (1.99 ns)
+	'add' operation ('a', reduce.c:57->poly.c:20->polyvec.c:124) [34]  (2.18 ns)
+
+ <State 5>: 4.95ns
+The critical path consists of the following:
+	'select' operation ('tmp_i_i_cast_cast', reduce.c:58->poly.c:20->polyvec.c:124) [36]  (0 ns)
+	'add' operation ('a', reduce.c:58->poly.c:20->polyvec.c:124) [37]  (2.18 ns)
+	'store' operation (poly.c:20->polyvec.c:124) of variable 'a', reduce.c:58->poly.c:20->polyvec.c:124 on array 'v_vec_coeffs' [38]  (2.77 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

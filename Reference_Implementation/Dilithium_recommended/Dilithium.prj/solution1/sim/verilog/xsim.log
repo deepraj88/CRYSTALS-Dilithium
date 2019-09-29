@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# xsim v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Mar 27 17:25:38 2019
+# Process ID: 12091
+# Current directory: /home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog
+# Command line: xsim -mode tcl -source {xsim.dir/crypto_sign/xsim_script.tcl}
+# Log file: /home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/xsim.log
+# Journal file: /home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/crypto_sign/xsim_script.tcl
+# xsim {crypto_sign} -autoloadwcfg -tclbatch {crypto_sign.tcl}
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source crypto_sign.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [n/a] @ "125000"
+// RTL Simulation : 1 / 1 [n/a] @ "8268465000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 8268505 ns : File "/home/dss545/vivado_hls/CRYSTALS-Dilithium/Reference_Implementation/Dilithium_recommended/Dilithium.prj/solution1/sim/verilog/crypto_sign.autotb.v" Line 485
+run: Time (s): cpu = 00:00:00.02 ; elapsed = 00:01:27 . Memory (MB): peak = 1272.176 ; gain = 0.000 ; free physical = 383990 ; free virtual = 489401
+## quit
+INFO: [Common 17-206] Exiting xsim at Wed Mar 27 17:27:15 2019...
