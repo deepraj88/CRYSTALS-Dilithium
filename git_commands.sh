@@ -11,5 +11,6 @@ find * -name "aes.c" | xargs git add
 find * -name "*aps" | xargs git add
 find * -name "*directive" | xargs git add
 find * -name "*tcls" | xargs git add
+git add Hw_Implementation_Docs/
 git add git_commands.sh
 git add README.md

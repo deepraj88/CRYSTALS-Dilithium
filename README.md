@@ -26,8 +26,6 @@
 
 # Synthesis
 * Go to: Solution -> Run C Synthesis -> Active Solution. This will start synthesizing function which mentions as Top Module.
- ![synthesis](./Hw_Implementation_Docs/synthesis.png)
 * Once the syntheis is over, Run "C/RTL Cosimulation": Solution -> Run C/RTL Cosimulation.
- ![cosimulation](./Hw_Implementation_Docs/cosimulation.png)
 
 
