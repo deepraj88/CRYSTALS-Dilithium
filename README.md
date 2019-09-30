@@ -2,7 +2,7 @@
 
 # Git Instructions
 * We are only uploading C files, header files, project settings in Git. git_commands.sh adds only relevent files for uploading. 
-If you create new project or new solution, this file will take care of uplaoding the necessary files. If you create a new file, you need to write the git add command separately.
+* If you create new project or new solution, this file will take care of uplaoding the necessary files. If you create a new file, you need to write the git add command separately.
 * __When you create a new porject in vivado, *ALWAYS END WITH (.prj)*__
 
 # Vivado HLS
