@@ -70,7 +70,7 @@ main()
 #elif (RADIX == 64)
     sprintf(fn_rsp, "/home/kb150/CRYSTALS-Dilithium/KAT/Dilithium_recommended/PQCsignKAT_3504.rsp");
 #endif*/
-    sprintf(fn_rsp, "/home/dss545/vivado_hls/CRYSTALS-Dilithium/KAT/Dilithium_weak/PQCsignKAT_2096.rsp");
+    sprintf(fn_rsp, "../../../../../../KAT/Dilithium_weak/PQCsignKAT_2096.rsp");
     if ( (fp_rsp = fopen(fn_rsp, "r")) == NULL ) {
         printf("Couldn't open <%s> for read\n", fn_rsp);
         return KAT_FILE_OPEN_ERROR;
