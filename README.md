@@ -1,10 +1,10 @@
 # Hardware Implementation
 
-#Git Instructions
+# Git Instructions
 * We are only uploading C files, header files, project settings in Git. git_commands.sh adds only relevent files for this. If you create new project or new solution, this file will take care of uplaoding the necessary files. If you create a new file, you need to write the git add command separately.
-* __When you create a new porject in vivado, *ALWAYS END WITH (.prj)* __
+* **When you create a new porject in vivado, *ALWAYS END WITH (.prj)* **
 
-#Vivado HLS
+# Vivado HLS
 # Open Project
 * Download the github project in the local repository.
 * Open the project. The project name ends with (.prj). One such path for project is: CRYSTALS-Dilithium/Optimized_Implementation/Dilithium_weak/dilithium_weak.prj/
