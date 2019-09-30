@@ -11,7 +11,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 84 \
+    id 38 \
     name c_coeffs \
     reset_level 1 \
     sync_rst true \
@@ -30,14 +30,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 86 \
+    id 40 \
     name b_coeffs \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename b_coeffs \
     op interface \
-    ports { b_coeffs_address0 { O 11 vector } b_coeffs_ce0 { O 1 bit } b_coeffs_q0 { I 23 vector } b_coeffs_address1 { O 11 vector } b_coeffs_ce1 { O 1 bit } b_coeffs_q1 { I 23 vector } } \
+    ports { b_coeffs_address0 { O 8 vector } b_coeffs_ce0 { O 1 bit } b_coeffs_q0 { I 32 vector } b_coeffs_address1 { O 8 vector } b_coeffs_ce1 { O 1 bit } b_coeffs_q1 { I 32 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'b_coeffs'"
@@ -48,15 +48,15 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 85 \
-    name c_coeffs_offset \
+    id 39 \
+    name a_coeffs_offset \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_c_coeffs_offset \
+    corename dc_a_coeffs_offset \
     op interface \
-    ports { c_coeffs_offset { I 3 vector } } \
+    ports { a_coeffs_offset { I 3 vector } } \
 } "
 }
 

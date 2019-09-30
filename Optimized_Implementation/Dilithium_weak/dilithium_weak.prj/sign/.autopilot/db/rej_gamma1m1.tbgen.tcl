@@ -10,11 +10,11 @@ set ProfileFlag 0
 set StallSigGenFlag 0
 set isEnableWaveformDebug 1
 set C_modelName {rej_gamma1m1}
-set C_modelType { int 9 }
+set C_modelType { int 32 }
 set C_modelArgList {
 	{ a int 24 regular {array 512 { 0 3 } 0 1 }  }
 	{ a_offset int 1 regular  }
-	{ a_offset1 int 9 regular  }
+	{ a_offset1 int 32 regular  }
 	{ len int 10 regular  }
 	{ buf_r int 8 regular {array 680 { 1 1 } 1 1 }  }
 	{ buflen int 11 regular  }
@@ -22,11 +22,11 @@ set C_modelArgList {
 set C_modelArgMapList {[ 
 	{ "Name" : "a", "interface" : "memory", "bitwidth" : 24, "direction" : "WRITEONLY"} , 
  	{ "Name" : "a_offset", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
- 	{ "Name" : "a_offset1", "interface" : "wire", "bitwidth" : 9, "direction" : "READONLY"} , 
+ 	{ "Name" : "a_offset1", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY"} , 
  	{ "Name" : "len", "interface" : "wire", "bitwidth" : 10, "direction" : "READONLY"} , 
  	{ "Name" : "buf_r", "interface" : "memory", "bitwidth" : 8, "direction" : "READONLY"} , 
  	{ "Name" : "buflen", "interface" : "wire", "bitwidth" : 11, "direction" : "READONLY"} , 
- 	{ "Name" : "ap_return", "interface" : "wire", "bitwidth" : 9} ]}
+ 	{ "Name" : "ap_return", "interface" : "wire", "bitwidth" : 32} ]}
 # RTL Port declarations: 
 set portNum 21
 set portList { 
@@ -41,7 +41,7 @@ set portList {
 	{ a_we0 sc_out sc_logic 1 signal 0 } 
 	{ a_d0 sc_out sc_lv 24 signal 0 } 
 	{ a_offset sc_in sc_lv 1 signal 1 } 
-	{ a_offset1 sc_in sc_lv 9 signal 2 } 
+	{ a_offset1 sc_in sc_lv 32 signal 2 } 
 	{ len sc_in sc_lv 10 signal 3 } 
 	{ buf_r_address0 sc_out sc_lv 10 signal 4 } 
 	{ buf_r_ce0 sc_out sc_logic 1 signal 4 } 
@@ -50,7 +50,7 @@ set portList {
 	{ buf_r_ce1 sc_out sc_logic 1 signal 4 } 
 	{ buf_r_q1 sc_in sc_lv 8 signal 4 } 
 	{ buflen sc_in sc_lv 11 signal 5 } 
-	{ ap_return sc_out sc_lv 9 signal -1 } 
+	{ ap_return sc_out sc_lv 32 signal -1 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -64,7 +64,7 @@ set NewPortList {[
  	{ "name": "a_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "a", "role": "we0" }} , 
  	{ "name": "a_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "a", "role": "d0" }} , 
  	{ "name": "a_offset", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "a_offset", "role": "default" }} , 
- 	{ "name": "a_offset1", "direction": "in", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "a_offset1", "role": "default" }} , 
+ 	{ "name": "a_offset1", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "a_offset1", "role": "default" }} , 
  	{ "name": "len", "direction": "in", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "len", "role": "default" }} , 
  	{ "name": "buf_r_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "buf_r", "role": "address0" }} , 
  	{ "name": "buf_r_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "buf_r", "role": "ce0" }} , 
@@ -73,7 +73,7 @@ set NewPortList {[
  	{ "name": "buf_r_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "buf_r", "role": "ce1" }} , 
  	{ "name": "buf_r_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "buf_r", "role": "q1" }} , 
  	{ "name": "buflen", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "buflen", "role": "default" }} , 
- 	{ "name": "ap_return", "direction": "out", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "ap_return", "role": "default" }}  ]}
+ 	{ "name": "ap_return", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "ap_return", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
 	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "",
@@ -120,8 +120,8 @@ set PipelineEnableSignalInfo {[
 set Spec2ImplPortList { 
 	a { ap_memory {  { a_address0 mem_address 1 9 }  { a_ce0 mem_ce 1 1 }  { a_we0 mem_we 1 1 }  { a_d0 mem_din 1 24 } } }
 	a_offset { ap_none {  { a_offset in_data 0 1 } } }
-	a_offset1 { ap_none {  { a_offset1 in_data 0 9 } } }
+	a_offset1 { ap_none {  { a_offset1 in_data 0 32 } } }
 	len { ap_none {  { len in_data 0 10 } } }
-	buf_r { ap_memory {  { buf_r_address0 mem_address 1 10 }  { buf_r_ce0 mem_ce 1 1 }  { buf_r_q0 mem_dout 0 8 }  { buf_r_address1 mem_address 1 10 }  { buf_r_ce1 mem_ce 1 1 }  { buf_r_q1 mem_dout 0 8 } } }
+	buf_r { ap_memory {  { buf_r_address0 mem_address 1 10 }  { buf_r_ce0 mem_ce 1 1 }  { buf_r_q0 mem_dout 0 8 }  { buf_r_address1 MemPortADDR2 1 10 }  { buf_r_ce1 MemPortCE2 1 1 }  { buf_r_q1 MemPortDOUT2 0 8 } } }
 	buflen { ap_none {  { buflen in_data 0 11 } } }
 }

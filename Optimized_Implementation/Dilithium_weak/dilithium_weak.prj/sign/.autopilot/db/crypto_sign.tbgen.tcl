@@ -1,6 +1,3 @@
-set C_TypeInfoList {{ 
-"crypto_sign" : [[], {"return": [[], {"scalar": "int"}] }, [{"ExternC" : 0}], [ {"sm": [[], {"array": [ {"scalar": "unsigned char"}, [4887]]}] }, {"smlen": [[], {"array": [ {"scalar": "long long unsigned int"}, [1]]}] }, {"m": [[], {"array": [ {"scalar": "unsigned char"}, [3400]]}] }, {"mlen": [[], {"scalar": "long long unsigned int"}] }, {"sk": [[], {"array": [ {"scalar": "unsigned char"}, [2096]]}] }],[],""]
-}}
 set moduleName crypto_sign
 set isTaskLevelControl 1
 set isCombinational 0
@@ -141,31 +138,31 @@ set RtlHierarchyInfo {[
 					{"ID" : "53", "SubInstance" : "grp_unpack_sk_fu_1028", "Port" : "sk"}]},
 			{"Name" : "KeccakF_RoundConstan", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
+					{"ID" : "25", "SubInstance" : "grp_poly_uniform_gamma1m_fu_963", "Port" : "KeccakF_RoundConstan"},
 					{"ID" : "39", "SubInstance" : "grp_expand_mat_fu_985", "Port" : "KeccakF_RoundConstan"},
 					{"ID" : "33", "SubInstance" : "grp_shake256_fu_975", "Port" : "KeccakF_RoundConstan"},
-					{"ID" : "18", "SubInstance" : "grp_challenge_fu_954", "Port" : "KeccakF_RoundConstan"},
-					{"ID" : "25", "SubInstance" : "grp_poly_uniform_gamma1m_fu_963", "Port" : "KeccakF_RoundConstan"}]},
+					{"ID" : "18", "SubInstance" : "grp_challenge_fu_954", "Port" : "KeccakF_RoundConstan"}]},
 			{"Name" : "loop2_max_2", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
 					{"ID" : "39", "SubInstance" : "grp_expand_mat_fu_985", "Port" : "loop2_max_2"}]},
 			{"Name" : "zetas", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "54", "SubInstance" : "grp_ntt_fu_1044", "Port" : "zetas"},
 					{"ID" : "56", "SubInstance" : "grp_ntt_1_fu_1056", "Port" : "zetas"},
-					{"ID" : "58", "SubInstance" : "grp_ntt_2_fu_1068", "Port" : "zetas"}]},
+					{"ID" : "58", "SubInstance" : "grp_ntt_2_fu_1068", "Port" : "zetas"},
+					{"ID" : "54", "SubInstance" : "grp_ntt_fu_1044", "Port" : "zetas"}]},
 			{"Name" : "loop2_max", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "54", "SubInstance" : "grp_ntt_fu_1044", "Port" : "loop2_max"},
 					{"ID" : "56", "SubInstance" : "grp_ntt_1_fu_1056", "Port" : "loop2_max"},
-					{"ID" : "58", "SubInstance" : "grp_ntt_2_fu_1068", "Port" : "loop2_max"}]},
+					{"ID" : "58", "SubInstance" : "grp_ntt_2_fu_1068", "Port" : "loop2_max"},
+					{"ID" : "54", "SubInstance" : "grp_ntt_fu_1044", "Port" : "loop2_max"}]},
 			{"Name" : "zetas_inv", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "49", "SubInstance" : "grp_invntt_frominvmont_1_fu_1004", "Port" : "zetas_inv"},
-					{"ID" : "51", "SubInstance" : "grp_invntt_frominvmont_fu_1017", "Port" : "zetas_inv"}]},
+					{"ID" : "51", "SubInstance" : "grp_invntt_frominvmont_fu_1017", "Port" : "zetas_inv"},
+					{"ID" : "49", "SubInstance" : "grp_invntt_frominvmont_1_fu_1004", "Port" : "zetas_inv"}]},
 			{"Name" : "loop2_max_1", "Type" : "OVld", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "49", "SubInstance" : "grp_invntt_frominvmont_1_fu_1004", "Port" : "loop2_max_1"},
-					{"ID" : "51", "SubInstance" : "grp_invntt_frominvmont_fu_1017", "Port" : "loop2_max_1"}]}]},
+					{"ID" : "51", "SubInstance" : "grp_invntt_frominvmont_fu_1017", "Port" : "loop2_max_1"},
+					{"ID" : "49", "SubInstance" : "grp_invntt_frominvmont_1_fu_1004", "Port" : "loop2_max_1"}]}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.seedbuf_U", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.c_coeffs_U", "Parent" : "0"},
 	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.chat_coeffs_U", "Parent" : "0"},
@@ -242,25 +239,25 @@ set RtlHierarchyInfo {[
 		"InDataflowNetwork" : "0",
 		"HasNonBlockingOperation" : "0",
 		"WaitState" : [
-			{"State" : "ap_ST_fsm_state14", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_KeccakF1600_StatePer_fu_450"},
-			{"State" : "ap_ST_fsm_state19", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_KeccakF1600_StatePer_fu_450"},
-			{"State" : "ap_ST_fsm_state18", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_rej_gamma1m1_fu_457"},
-			{"State" : "ap_ST_fsm_state23", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_rej_gamma1m1_fu_457"}],
+			{"State" : "ap_ST_fsm_state14", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_KeccakF1600_StatePer_fu_452"},
+			{"State" : "ap_ST_fsm_state19", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_KeccakF1600_StatePer_fu_452"},
+			{"State" : "ap_ST_fsm_state18", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_rej_gamma1m1_fu_459"},
+			{"State" : "ap_ST_fsm_state23", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_rej_gamma1m1_fu_459"}],
 		"Port" : [
 			{"Name" : "a_coeffs", "Type" : "Memory", "Direction" : "O",
 				"SubConnect" : [
-					{"ID" : "32", "SubInstance" : "grp_rej_gamma1m1_fu_457", "Port" : "a"}]},
+					{"ID" : "32", "SubInstance" : "grp_rej_gamma1m1_fu_459", "Port" : "a"}]},
 			{"Name" : "a_coeffs_offset", "Type" : "None", "Direction" : "I"},
 			{"Name" : "seed", "Type" : "Memory", "Direction" : "I"},
 			{"Name" : "nonce", "Type" : "None", "Direction" : "I"},
 			{"Name" : "KeccakF_RoundConstan", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "30", "SubInstance" : "grp_KeccakF1600_StatePer_fu_450", "Port" : "KeccakF_RoundConstan"}]}]},
+					{"ID" : "30", "SubInstance" : "grp_KeccakF1600_StatePer_fu_452", "Port" : "KeccakF_RoundConstan"}]}]},
 	{"ID" : "26", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_poly_uniform_gamma1m_fu_963.t_U", "Parent" : "25"},
 	{"ID" : "27", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_poly_uniform_gamma1m_fu_963.inbuf_U", "Parent" : "25"},
 	{"ID" : "28", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_poly_uniform_gamma1m_fu_963.outbuf_U", "Parent" : "25"},
 	{"ID" : "29", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_poly_uniform_gamma1m_fu_963.state_U", "Parent" : "25"},
-	{"ID" : "30", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_poly_uniform_gamma1m_fu_963.grp_KeccakF1600_StatePer_fu_450", "Parent" : "25", "Child" : ["31"],
+	{"ID" : "30", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_poly_uniform_gamma1m_fu_963.grp_KeccakF1600_StatePer_fu_452", "Parent" : "25", "Child" : ["31"],
 		"CDFG" : "KeccakF1600_StatePer",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
@@ -276,8 +273,8 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "state", "Type" : "Memory", "Direction" : "IO"},
 			{"Name" : "KeccakF_RoundConstan", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "31", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_poly_uniform_gamma1m_fu_963.grp_KeccakF1600_StatePer_fu_450.KeccakF_RoundConstan_U", "Parent" : "30"},
-	{"ID" : "32", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_poly_uniform_gamma1m_fu_963.grp_rej_gamma1m1_fu_457", "Parent" : "25",
+	{"ID" : "31", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_poly_uniform_gamma1m_fu_963.grp_KeccakF1600_StatePer_fu_452.KeccakF_RoundConstan_U", "Parent" : "30"},
+	{"ID" : "32", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_poly_uniform_gamma1m_fu_963.grp_rej_gamma1m1_fu_459", "Parent" : "25",
 		"CDFG" : "rej_gamma1m1",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
@@ -776,7 +773,7 @@ set Spec2ImplPortList {
 	smlen { ap_memory {  { smlen_address0 mem_address 1 1 }  { smlen_ce0 mem_ce 1 1 }  { smlen_we0 mem_we 1 1 }  { smlen_d0 mem_din 1 64 } } }
 	m { ap_memory {  { m_address0 mem_address 1 12 }  { m_ce0 mem_ce 1 1 }  { m_q0 mem_dout 0 8 } } }
 	mlen { ap_none {  { mlen in_data 0 64 } } }
-	sk { ap_memory {  { sk_address0 mem_address 1 12 }  { sk_ce0 mem_ce 1 1 }  { sk_q0 mem_dout 0 8 }  { sk_address1 mem_address 1 12 }  { sk_ce1 mem_ce 1 1 }  { sk_q1 mem_dout 0 8 } } }
+	sk { ap_memory {  { sk_address0 mem_address 1 12 }  { sk_ce0 mem_ce 1 1 }  { sk_q0 mem_dout 0 8 }  { sk_address1 MemPortADDR2 1 12 }  { sk_ce1 MemPortCE2 1 1 }  { sk_q1 MemPortDOUT2 0 8 } } }
 }
 
 set busDeadlockParameterList { 

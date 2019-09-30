@@ -3,7 +3,7 @@
 # Memory (RAM/ROM)  definition:
 set ID 48
 set hasByteEnable 0
-set MemName invntt_frominvmonhbi
+set MemName invntt_frominvmont_1_zetas_inv
 set CoreName ap_simcore_mem
 set PortList { 1 }
 set DataWd 23

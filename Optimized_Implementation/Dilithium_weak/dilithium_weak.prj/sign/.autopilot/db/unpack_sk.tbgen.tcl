@@ -157,8 +157,8 @@ set PipelineEnableSignalInfo {[
 set Spec2ImplPortList { 
 	rho { ap_memory {  { rho_address0 mem_address 1 7 }  { rho_ce0 mem_ce 1 1 }  { rho_we0 mem_we 1 1 }  { rho_d0 mem_din 1 8 } } }
 	tr { ap_memory {  { tr_address0 mem_address 1 13 }  { tr_ce0 mem_ce 1 1 }  { tr_we0 mem_we 1 1 }  { tr_d0 mem_din 1 8 } } }
-	s1_vec_coeffs { ap_memory {  { s1_vec_coeffs_address0 mem_address 1 9 }  { s1_vec_coeffs_ce0 mem_ce 1 1 }  { s1_vec_coeffs_we0 mem_we 1 1 }  { s1_vec_coeffs_d0 mem_din 1 32 }  { s1_vec_coeffs_address1 mem_address 1 9 }  { s1_vec_coeffs_ce1 mem_ce 1 1 }  { s1_vec_coeffs_we1 mem_we 1 1 }  { s1_vec_coeffs_d1 mem_din 1 32 } } }
-	s2_vec_coeffs { ap_memory {  { s2_vec_coeffs_address0 mem_address 1 10 }  { s2_vec_coeffs_ce0 mem_ce 1 1 }  { s2_vec_coeffs_we0 mem_we 1 1 }  { s2_vec_coeffs_d0 mem_din 1 32 }  { s2_vec_coeffs_address1 mem_address 1 10 }  { s2_vec_coeffs_ce1 mem_ce 1 1 }  { s2_vec_coeffs_we1 mem_we 1 1 }  { s2_vec_coeffs_d1 mem_din 1 32 } } }
+	s1_vec_coeffs { ap_memory {  { s1_vec_coeffs_address0 mem_address 1 9 }  { s1_vec_coeffs_ce0 mem_ce 1 1 }  { s1_vec_coeffs_we0 mem_we 1 1 }  { s1_vec_coeffs_d0 mem_din 1 32 }  { s1_vec_coeffs_address1 MemPortADDR2 1 9 }  { s1_vec_coeffs_ce1 MemPortCE2 1 1 }  { s1_vec_coeffs_we1 MemPortWE2 1 1 }  { s1_vec_coeffs_d1 MemPortDIN2 1 32 } } }
+	s2_vec_coeffs { ap_memory {  { s2_vec_coeffs_address0 mem_address 1 10 }  { s2_vec_coeffs_ce0 mem_ce 1 1 }  { s2_vec_coeffs_we0 mem_we 1 1 }  { s2_vec_coeffs_d0 mem_din 1 32 }  { s2_vec_coeffs_address1 MemPortADDR2 1 10 }  { s2_vec_coeffs_ce1 MemPortCE2 1 1 }  { s2_vec_coeffs_we1 MemPortWE2 1 1 }  { s2_vec_coeffs_d1 MemPortDIN2 1 32 } } }
 	t0_vec_coeffs { ap_memory {  { t0_vec_coeffs_address0 mem_address 1 10 }  { t0_vec_coeffs_ce0 mem_ce 1 1 }  { t0_vec_coeffs_we0 mem_we 1 1 }  { t0_vec_coeffs_d0 mem_din 1 32 } } }
-	sk { ap_memory {  { sk_address0 mem_address 1 12 }  { sk_ce0 mem_ce 1 1 }  { sk_q0 mem_dout 0 8 }  { sk_address1 mem_address 1 12 }  { sk_ce1 mem_ce 1 1 }  { sk_q1 mem_dout 0 8 } } }
+	sk { ap_memory {  { sk_address0 mem_address 1 12 }  { sk_ce0 mem_ce 1 1 }  { sk_q0 mem_dout 0 8 }  { sk_address1 MemPortADDR2 1 12 }  { sk_ce1 MemPortCE2 1 1 }  { sk_q1 MemPortDOUT2 0 8 } } }
 }

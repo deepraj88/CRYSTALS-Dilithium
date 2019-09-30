@@ -3,7 +3,7 @@
 # Memory (RAM/ROM)  definition:
 set ID 37
 set hasByteEnable 0
-set MemName poly_uniform_gammdEe
+set MemName poly_uniform_gamma1m_inbuf
 set CoreName ap_simcore_mem
 set PortList { 0 2 }
 set DataWd 8
@@ -88,7 +88,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 # Memory (RAM/ROM)  definition:
 set ID 38
 set hasByteEnable 0
-set MemName poly_uniform_gammeOg
+set MemName poly_uniform_gamma1m_outbuf
 set CoreName ap_simcore_mem
 set PortList { 2 1 }
 set DataWd 8

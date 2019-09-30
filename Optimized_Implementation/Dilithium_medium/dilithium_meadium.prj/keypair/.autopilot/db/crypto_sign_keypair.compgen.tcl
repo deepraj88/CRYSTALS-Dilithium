@@ -1,9 +1,9 @@
 # This script segment is generated automatically by AutoPilot
 
 # Memory (RAM/ROM)  definition:
-set ID 96
+set ID 85
 set hasByteEnable 0
-set MemName crypto_sign_keypakbM
+set MemName crypto_sign_keypair_output_assign_4
 set CoreName ap_simcore_mem
 set PortList { 2 3 }
 set DataWd 8
@@ -86,9 +86,9 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 97
+set ID 86
 set hasByteEnable 0
-set MemName crypto_sign_keypalbW
+set MemName crypto_sign_keypair_s_1
 set CoreName ap_simcore_mem
 set PortList { 2 2 }
 set DataWd 64
@@ -171,9 +171,9 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 98
+set ID 87
 set hasByteEnable 0
-set MemName crypto_sign_keypancg
+set MemName crypto_sign_keypair_outbuf_1
 set CoreName ap_simcore_mem
 set PortList { 2 3 }
 set DataWd 8
@@ -256,9 +256,9 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 99
+set ID 88
 set hasByteEnable 0
-set MemName crypto_sign_keypaudo
+set MemName crypto_sign_keypair_seedbuf
 set CoreName ap_simcore_mem
 set PortList { 2 3 }
 set DataWd 8
@@ -341,9 +341,9 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 100
+set ID 89
 set hasByteEnable 0
-set MemName crypto_sign_keypavdy
+set MemName crypto_sign_keypair_tr
 set CoreName ap_simcore_mem
 set PortList { 2 3 }
 set DataWd 8
@@ -426,9 +426,9 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 101
+set ID 90
 set hasByteEnable 0
-set MemName crypto_sign_keypawdI
+set MemName crypto_sign_keypair_mat_vec_coeffs
 set CoreName ap_simcore_mem
 set PortList { 2 3 }
 set DataWd 23
@@ -511,9 +511,9 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 102
+set ID 91
 set hasByteEnable 0
-set MemName crypto_sign_keypaxdS
+set MemName crypto_sign_keypair_s1_vec_coeffs
 set CoreName ap_simcore_mem
 set PortList { 2 1 }
 set DataWd 23
@@ -596,9 +596,9 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 103
+set ID 92
 set hasByteEnable 0
-set MemName crypto_sign_keypayd2
+set MemName crypto_sign_keypair_s1hat_vec_coeffs
 set CoreName ap_simcore_mem
 set PortList { 2 3 }
 set DataWd 32
@@ -681,9 +681,9 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 104
+set ID 93
 set hasByteEnable 0
-set MemName crypto_sign_keypazec
+set MemName crypto_sign_keypair_s2_vec_coeffs
 set CoreName ap_simcore_mem
 set PortList { 2 1 }
 set DataWd 23
@@ -766,11 +766,11 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 105
+set ID 94
 set hasByteEnable 0
-set MemName crypto_sign_keypaAem
+set MemName crypto_sign_keypair_t_vec_coeffs
 set CoreName ap_simcore_mem
-set PortList { 2 2 }
+set PortList { 2 1 }
 set DataWd 32
 set AddrRange 1024
 set AddrWd 10
@@ -851,9 +851,9 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 106
+set ID 95
 set hasByteEnable 0
-set MemName crypto_sign_keypaBew
+set MemName crypto_sign_keypair_t1_vec_coeffs
 set CoreName ap_simcore_mem
 set PortList { 2 1 }
 set DataWd 18
@@ -936,9 +936,9 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 107
+set ID 96
 set hasByteEnable 0
-set MemName crypto_sign_keypaCeG
+set MemName crypto_sign_keypair_t0_vec_coeffs
 set CoreName ap_simcore_mem
 set PortList { 2 1 }
 set DataWd 24
@@ -1031,7 +1031,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 108 \
+    id 97 \
     name pk \
     reset_level 1 \
     sync_rst true \
@@ -1050,7 +1050,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 109 \
+    id 98 \
     name sk \
     reset_level 1 \
     sync_rst true \

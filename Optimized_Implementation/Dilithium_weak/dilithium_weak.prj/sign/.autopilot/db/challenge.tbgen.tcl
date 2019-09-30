@@ -137,5 +137,5 @@ set PipelineEnableSignalInfo {[
 set Spec2ImplPortList { 
 	c_coeffs { ap_memory {  { c_coeffs_address0 mem_address 1 8 }  { c_coeffs_ce0 mem_ce 1 1 }  { c_coeffs_we0 mem_we 1 1 }  { c_coeffs_d0 mem_din 1 23 }  { c_coeffs_q0 mem_dout 0 23 } } }
 	mu { ap_memory {  { mu_address0 mem_address 1 7 }  { mu_ce0 mem_ce 1 1 }  { mu_q0 mem_dout 0 8 } } }
-	w1_vec_coeffs { ap_memory {  { w1_vec_coeffs_address0 mem_address 1 10 }  { w1_vec_coeffs_ce0 mem_ce 1 1 }  { w1_vec_coeffs_q0 mem_dout 0 32 }  { w1_vec_coeffs_address1 mem_address 1 10 }  { w1_vec_coeffs_ce1 mem_ce 1 1 }  { w1_vec_coeffs_q1 mem_dout 0 32 } } }
+	w1_vec_coeffs { ap_memory {  { w1_vec_coeffs_address0 mem_address 1 10 }  { w1_vec_coeffs_ce0 mem_ce 1 1 }  { w1_vec_coeffs_q0 mem_dout 0 32 }  { w1_vec_coeffs_address1 MemPortADDR2 1 10 }  { w1_vec_coeffs_ce1 MemPortCE2 1 1 }  { w1_vec_coeffs_q1 MemPortDOUT2 0 32 } } }
 }

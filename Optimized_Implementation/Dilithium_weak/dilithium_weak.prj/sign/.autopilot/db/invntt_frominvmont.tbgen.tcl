@@ -102,7 +102,7 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	p { ap_memory {  { p_address0 mem_address 1 9 }  { p_ce0 mem_ce 1 1 }  { p_we0 mem_we 1 1 }  { p_d0 mem_din 1 32 }  { p_q0 mem_dout 0 32 }  { p_address1 mem_address 1 9 }  { p_ce1 mem_ce 1 1 }  { p_q1 mem_dout 0 32 } } }
+	p { ap_memory {  { p_address0 mem_address 1 9 }  { p_ce0 mem_ce 1 1 }  { p_we0 mem_we 1 1 }  { p_d0 mem_din 1 32 }  { p_q0 mem_dout 0 32 }  { p_address1 MemPortADDR2 1 9 }  { p_ce1 MemPortCE2 1 1 }  { p_q1 MemPortDOUT2 0 32 } } }
 	p_offset { ap_none {  { p_offset in_data 0 2 } } }
 	loop2_max_1 { ap_ovld {  { loop2_max_1_i in_data 0 32 }  { loop2_max_1_o out_data 1 32 }  { loop2_max_1_o_ap_vld out_vld 1 1 } } }
 }

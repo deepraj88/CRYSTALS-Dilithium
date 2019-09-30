@@ -88,7 +88,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 # Memory (RAM/ROM)  definition:
 set ID 74
 set hasByteEnable 0
-set MemName crypto_sign_c_coejbC
+set MemName crypto_sign_c_coeffs
 set CoreName ap_simcore_mem
 set PortList { 2 3 }
 set DataWd 23
@@ -173,7 +173,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 # Memory (RAM/ROM)  definition:
 set ID 75
 set hasByteEnable 0
-set MemName crypto_sign_mat_vlbW
+set MemName crypto_sign_mat_vec_coeffs
 set CoreName ap_simcore_mem
 set PortList { 2 3 }
 set DataWd 23
@@ -258,7 +258,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 # Memory (RAM/ROM)  definition:
 set ID 76
 set hasByteEnable 0
-set MemName crypto_sign_s1_vemb6
+set MemName crypto_sign_s1_vec_coeffs
 set CoreName ap_simcore_mem
 set PortList { 2 0 }
 set DataWd 32
@@ -343,7 +343,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 # Memory (RAM/ROM)  definition:
 set ID 77
 set hasByteEnable 0
-set MemName crypto_sign_y_vecncg
+set MemName crypto_sign_y_vec_coeffs
 set CoreName ap_simcore_mem
 set PortList { 2 3 }
 set DataWd 24
@@ -428,7 +428,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 # Memory (RAM/ROM)  definition:
 set ID 78
 set hasByteEnable 0
-set MemName crypto_sign_yhat_ocq
+set MemName crypto_sign_yhat_vec_coeffs
 set CoreName ap_simcore_mem
 set PortList { 2 3 }
 set DataWd 32
@@ -513,7 +513,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 # Memory (RAM/ROM)  definition:
 set ID 79
 set hasByteEnable 0
-set MemName crypto_sign_z_vecpcA
+set MemName crypto_sign_z_vec_coeffs
 set CoreName ap_simcore_mem
 set PortList { 2 1 }
 set DataWd 32
@@ -598,7 +598,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 # Memory (RAM/ROM)  definition:
 set ID 80
 set hasByteEnable 0
-set MemName crypto_sign_s2_veqcK
+set MemName crypto_sign_s2_vec_coeffs
 set CoreName ap_simcore_mem
 set PortList { 2 0 }
 set DataWd 32
@@ -683,7 +683,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 # Memory (RAM/ROM)  definition:
 set ID 81
 set hasByteEnable 0
-set MemName crypto_sign_t0_vercU
+set MemName crypto_sign_t0_vec_coeffs
 set CoreName ap_simcore_mem
 set PortList { 2 3 }
 set DataWd 32
@@ -768,7 +768,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 # Memory (RAM/ROM)  definition:
 set ID 82
 set hasByteEnable 0
-set MemName crypto_sign_w_vecsc4
+set MemName crypto_sign_w_vec_coeffs
 set CoreName ap_simcore_mem
 set PortList { 2 1 }
 set DataWd 32
@@ -853,7 +853,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 # Memory (RAM/ROM)  definition:
 set ID 83
 set hasByteEnable 0
-set MemName crypto_sign_h_vecudo
+set MemName crypto_sign_h_vec_coeffs
 set CoreName ap_simcore_mem
 set PortList { 2 3 }
 set DataWd 1

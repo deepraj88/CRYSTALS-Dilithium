@@ -1,7 +1,7 @@
 # This script segment is generated automatically by AutoPilot
 
 # Memory (RAM/ROM)  definition:
-set ID 40
+set ID 42
 set hasByteEnable 0
 set MemName expand_mat_s
 set CoreName ap_simcore_mem
@@ -86,7 +86,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 41
+set ID 43
 set hasByteEnable 0
 set MemName expand_mat_inbuf
 set CoreName ap_simcore_mem
@@ -171,9 +171,9 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
 
 
 # Memory (RAM/ROM)  definition:
-set ID 42
+set ID 44
 set hasByteEnable 0
-set MemName expand_mat_outputhbi
+set MemName expand_mat_output_assign
 set CoreName ap_simcore_mem
 set PortList { 2 1 }
 set DataWd 8
@@ -266,7 +266,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 43 \
+    id 45 \
     name mat_vec_coeffs \
     reset_level 1 \
     sync_rst true \
@@ -285,7 +285,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 44 \
+    id 46 \
     name rho \
     reset_level 1 \
     sync_rst true \

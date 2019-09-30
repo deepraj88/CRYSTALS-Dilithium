@@ -71,7 +71,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_a_offset1 \
     op interface \
-    ports { a_offset1 { I 9 vector } } \
+    ports { a_offset1 { I 32 vector } } \
 } "
 }
 
@@ -129,7 +129,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename ap_return \
     op interface \
-    ports { ap_return { O 9 vector } } \
+    ports { ap_return { O 32 vector } } \
 } "
 }
 
